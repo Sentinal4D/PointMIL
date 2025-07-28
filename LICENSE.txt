@@ -1,0 +1,67 @@
+CONFIDENTIAL
+
+Sentinal4D Non‑Commercial End User License Agreement
+
+1. INTRODUCTION.
+
+This Non‑Commercial End User License Agreement (this "Agreement") is a binding agreement between you ("You") and **Sentinal4D**, a company with its principal offices in the United Kingdom ("We", "Us" or "Our").  This Agreement grants You a license to use certain materials provided by Sentinal4D (collectively, the "Licensed Materials") subject to Your acceptance of all terms contained herein.  While this Agreement is not a Creative Commons licence, it incorporates certain core principles thereof, including attribution, non‑commercial use and ShareAlike.
+
+Please read these terms carefully before using any Licensed Materials.  By using any of the Licensed Materials or by clicking to accept or agree to the terms of this Agreement, You represent that You have read, understood and agree to be bound by this Agreement and that You are at least 18 years of age.  If You are using the Licensed Materials on behalf of an organisation, You represent that You have authority to bind that organisation.  If You do not agree to the terms of this Agreement, You must not use any Licensed Materials.
+
+2. DEFINITIONS.
+
+"Derivative Technology" means any product or technology generated, conceived, developed or reduced to practice through Your use of, or derived from or based on, any Licensed Materials.  For clarity, Derivative Technology includes any modified dataset released by Sentinal4D.
+
+"Intellectual Property Rights" means all intellectual property and proprietary rights of any kind, however denominated, throughout the world, including rights in patents, patent applications, copyrights, trademarks, trade secrets, designs, inventions, works of authorship, software, data and databases, and all registrations and applications for any of the foregoing.
+
+"Licensed Intellectual Property Rights" means copyrights and similar rights closely related to copyright (including rights in software, data and databases) owned or controlled by Us and necessary for You to exercise Your rights under this Agreement.  Licensed Intellectual Property Rights do not include any other intellectual property rights, including patent rights, trademark rights or personality rights.
+
+"Licensed Materials" means any software, data, dataset or other material made available by Sentinal4D to which We apply this Agreement.
+
+"Permitted Purpose" means non‑commercial research, academic and educational purposes only.  "Non‑commercial research" means research not primarily intended for or directed towards commercial advantage or monetary compensation.
+
+"Use" (and its correlatives) means (a) use, download and access; and (b) solely with respect to datasets, copy, analyse, modify, adapt, aggregate, share and use to produce Derivative Technology.
+
+"You" means the individual or entity that Uses the Licensed Materials under this Agreement.
+
+3. LICENCE GRANT.
+
+Subject to Your compliance with this Agreement, We grant to You a personal, limited, non‑exclusive, non‑transferable, non‑sublicensable, royalty‑free licence under the Licensed Intellectual Property Rights to Use the Licensed Materials solely for the Permitted Purpose.
+
+You may not: (a) sell, lease, rent, lend, licence, sublicense, assign, distribute, share, publish, transfer or otherwise make available the Licensed Materials or Derivative Technology for monetary compensation; (b) use the Licensed Materials or Derivative Technology to initiate or conduct research or development programmes directed to products or services intended for commercial sale; (c) use the Licensed Materials or Derivative Technology to develop commercial software, models, algorithms or platforms; (d) deploy any AI model trained on the Licensed Materials or Derivative Technology for commercial programmes; (e) use the Licensed Materials or Derivative Technology for the sale or offer for sale of services; (f) use the Licensed Materials or Derivative Technology for trading of securities; or (g) publish for monetary compensation any article or presentation based on the Licensed Materials or Derivative Technology.
+
+If You wish to use the Licensed Materials or Derivative Technology for any purpose not permitted by this Agreement, please contact Sentinal4D to discuss a commercial licence.
+
+4. ATTRIBUTION REQUIREMENTS.
+
+You must include an attribution to Sentinal4D when citing any dataset or software governed by this Agreement.  For example: “We used the [dataset or model name] available from Sentinal4D pursuant to Sentinal4D’s non‑commercial licence.  Sentinal4D disclaims all representations and warranties with respect to this material.”  You must also indicate whether You modified the Licensed Materials or used them to create Derivative Technology.  If requested by Us, You must remove the foregoing attribution to the extent reasonably practicable.
+
+Nothing in this Agreement constitutes permission to imply that You are connected with or endorsed by Sentinal4D.
+
+5. ACCEPTABLE USE TERMS.
+
+You will not: (a) reverse engineer, disassemble, decompile or otherwise attempt to derive the source code of any software provided by Sentinal4D; (b) modify or create derivative works of the Licensed Materials except as expressly permitted; (c) remove or alter any proprietary notices on the Licensed Materials; (d) use the Licensed Materials in any way that infringes any third‑party intellectual property right; (e) use the Licensed Materials to violate any applicable law; or (f) engage in abusive or illegal activities with respect to the Licensed Materials.
+
+6. INTELLECTUAL PROPERTY RIGHTS.
+
+The Licensed Materials are provided under licence and not sold.  Sentinal4D retains ownership of all intellectual property rights in the Licensed Materials.  Except for the licence expressly granted herein, no rights are granted by implication, estoppel or otherwise.  You may own intellectual property rights in Your contributions to Derivative Technology; however, Your use of the Licensed Materials in any Derivative Technology remains subject to this Agreement.
+
+7. SHARING LICENSED MATERIALS.
+
+If You share the Licensed Materials or any Derivative Technology, the recipient automatically receives an offer from Sentinal4D to use such material under the terms of this Agreement.  Any licence You grant in Your contributions to a Derivative Technology must be essentially equivalent to this Agreement and must not permit commercial use.  You may not impose additional restrictions on the recipient’s use of the Licensed Materials or Derivative Technology.
+
+8. DISCLAIMER OF WARRANTIES.
+
+THE LICENSED MATERIALS ARE PROVIDED "AS IS" WITHOUT REPRESENTATIONS OR WARRANTIES OF ANY KIND.  TO THE MAXIMUM EXTENT PERMITTED BY LAW, SENTINAL4D DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON‑INFRINGEMENT.  YOU ASSUME ALL RISKS ARISING OUT OF YOUR USE OF THE LICENSED MATERIALS AND ANY DERIVATIVE TECHNOLOGY.
+
+9. LIMITATION OF LIABILITY.
+
+TO THE FULLEST EXTENT PERMITTED BY LAW, SENTINAL4D WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL OR PUNITIVE DAMAGES ARISING OUT OF THIS AGREEMENT OR THE USE OF THE LICENSED MATERIALS, EVEN IF SENTINAL4D HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+10. TERM AND TERMINATION.
+
+This Agreement commences when You first use the Licensed Materials and continues until terminated.  Your rights automatically terminate if You fail to comply with this Agreement.  Upon termination, You must cease all use of the Licensed Materials and destroy all copies.  Sections that by their nature should survive termination, including those relating to intellectual property, attribution, limitation of liability and indemnification, will continue in force.
+
+11. GENERAL.
+
+This Agreement constitutes the entire agreement between You and Sentinal4D regarding the Licensed Materials.  It is governed by the laws of England and Wales, without regard to conflict of law principles.  The courts of England shall have exclusive jurisdiction over any dispute arising from this Agreement.  If any provision of this Agreement is unenforceable, the remainder will remain in full force and effect.  No waiver of any term shall be deemed a further waiver of any other term.  You may not assign this Agreement without Our prior written consent; Sentinal4D may assign this Agreement without restriction.
