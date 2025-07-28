@@ -6,13 +6,10 @@ body {
 }
 
 .header-wrapper {
-    /* max-width: 1200px; */
-    /* background-color: #265073; */
-
-    /* background: linear-gradient(127deg, #265073 0%, #596FB7 45%, #C6CF9B 70%, rgb(244,234,203) 100%); */
-    background: linear-gradient(-235deg, #000000 10%, #122153 55%, #FEAE6F 85%, rgb(244,234,203) 100%);
-    
+    background: linear-gradient(135deg, #d94cc4 0%, #a74dde 40%, #5e2da8 75%, #1e0b3f 100%);
 }
+
+
 
 .header-container {
   /* color: #FFC436; */
