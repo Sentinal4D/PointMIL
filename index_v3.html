@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Interpretable Point-Cloud Classification using Multiple Instance Learning</title>
+  <title>Interpretable Point‑Cloud Classification using Multiple Instance Learning</title>
   <link rel="icon" type="image/x-icon" href="assets/favicon_io/favicon_black.avif">
 
   <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://sentinal4d.github.io/PointMIL/" />
   <meta property="og:title" content="PointMIL" />
-  <meta property="og:description" content="ICCV 2025. A unified MIL framework for accurate, inherently interpretable point-cloud classification with point-level explanations." />
+  <meta property="og:description" content="ICCV 2025. A unified MIL framework for accurate, inherently interpretable point‑cloud classification with point‑level explanations." />
   <meta property="og:image" content="assets/social/pointmil_og.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="PointMIL" />
-  <meta name="twitter:description" content="ICCV 2025 highlight. Built-in interpretability for 3D point clouds via MIL pooling." />
+  <meta name="twitter:description" content="ICCV 2025 highlight. Built‑in interpretability for 3D point clouds via MIL pooling." />
   <meta name="twitter:image" content="assets/social/pointmil_og.png" />
 
   <!-- Fonts & icons -->
@@ -85,6 +85,7 @@
       .hero{grid-template-columns:1fr}
       .demo{grid-template-columns:1fr}
       #viewer{height:460px}
+
     }
   </style>
 </head>
@@ -93,7 +94,7 @@
     <!-- HERO -->
     <section class="hero">
       <div>
-        <h1 class="title">Interpretable Point-Cloud Classification using Multiple Instance Learning</h1>
+        <h1 class="title">Interpretable Point‑Cloud Classification using Multiple Instance Learning</h1>
         <p class="subtitle">ICCV 2025 <span class="chip">Highlight</span></p>
         <div class="authors">
           <span class="author"><a href="https://www.linkedin.com/in/matthewdevries13/">Matt De Vries</a><sup>1,2,3</sup></span>
@@ -119,7 +120,7 @@
 
         <div class="badges">
           <span class="badge"><i class="fa-solid fa-bolt"></i> Accurate</span>
-          <span class="badge"><i class="fa-solid fa-magnifying-glass"></i> Point-level explanations</span>
+          <span class="badge"><i class="fa-solid fa-magnifying-glass"></i> Point‑level explanations</span>
           <span class="badge"><i class="fa-solid fa-layer-group"></i> MIL pooling (Instance / Attention / Additive / Conjunctive)</span>
         </div>
       </div>
@@ -131,7 +132,7 @@
     <!-- DEMO -->
     <section id="demo" class="section">
       <h2>Interactive demo</h2>
-      <p>Load a sample point cloud and visualise PointMIL's point-level importance (red = more important). Toggle class, palette, and thresholds. Drop your own <code>.json</code> files that follow the schema below.</p>
+      <p>Load a sample point cloud and visualise PointMIL's point‑level importance (red = more important). Toggle class, palette, and thresholds. Drop your own <code>.json</code> files that follow the schema below.</p>
       <div class="demo">
         <div id="viewer"></div>
         <div class="panel">
@@ -144,7 +145,7 @@
               <select id="classSelect"></select>
             </div>
             <div class="row"><label>Point size</label>
-              <input id="sizeSlider" type="range" min="2" max="12" step="1" value="5" />
+              <input id="sizeSlider" type="range" min="1" max="10" step="1" value="3" />
             </div>
             <div class="row"><label>Importance threshold</label>
               <input id="thrSlider" type="range" min="0" max="1" step="0.01" value="0.0" />
@@ -162,15 +163,6 @@
                 <option value="#ffffff">Light</option>
               </select>
             </div>
-            <div class="row"><label>Quality</label>
-                <select id="qualitySelect">
-                <option value="spheres">High: Spheres + shadows</option>
-                <option value="points">Fast: GL points</option>
-                </select>
-            </div>
-            <div class="row" id="sphereSizeRow"><label>Sphere size</label>
-                <input id="sphereSize" type="range" min="0.01" max="0.06" step="0.005" value="0.028" />
-            </div>
             <div class="row">
               <input id="fileInput" type="file" accept=".json" />
             </div>
@@ -181,57 +173,28 @@
         </div>
       </div>
     </section>
-    <section id="hq" class="section">
-      <h2>High-quality interactive render (pubvis)</h2>
-      <p>Studio-quality sphere-glyph rendering with soft shadows (exported via bproc-pubvis).</p>
 
-      <div class="panel" style="padding:0; overflow:hidden">
-        <model-viewer id="pubvisViewer"
-          src="/home/mvries/Documents/Sentinal4D/GitHub/PointMIL/assets/models/intra_cell_redgray.glb"
-          camera-controls auto-rotate
-          tone-mapping="neutral" shadow-intensity="1"
-          exposure="1.05" environment-image="neutral"
-          style="width:100%; height:520px; display:block; background:#fff">
-        </model-viewer>
-<!--          <model-viewer id="pubvisViewer"-->
-<!--              src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"-->
-<!--              camera-controls auto-rotate shadow-intensity="1" exposure="1.05"-->
-<!--              style="width:100%; height:520px; display:block; background:#fff">-->
-<!--            </model-viewer>-->
-
-      </div>
-
-      <div class="panel" style="margin-top:12px">
-        <div class="ctrl">
-          <div class="row"><label>Model</label>
-            <select id="glbSelect">
-              <option value="assets/models/intra_cell_redgray.glb">IntrA — Pred=1 (red/gray)</option>
-              <!-- add more GLBs here -->
-              <!-- <option value="assets/models/rbc_bleb.glb">RBC — Blebbistatin</option> -->
-            </select>
-          </div>
-          <div class="row"><label>Auto-rotate</label>
-            <select id="autorotSelect">
-              <option value="on">On</option><option value="off">Off</option>
-            </select>
-          </div>
-          <div class="row"><label>Shadow</label>
-            <input id="shadowSlider" type="range" min="0" max="2" step="0.05" value="1.0"/>
-          </div>
-          <div class="row"><label>Exposure</label>
-            <input id="expSlider" type="range" min="0.6" max="1.6" step="0.02" value="1.05"/>
-          </div>
-          <div class="row"><label>Background</label>
-            <select id="bgHQ">
-              <option value="#ffffff">White</option>
-              <option value="#f6f7f9">Paper</option>
-              <option value="#0b0d12">Dark</option>
-            </select>
-          </div>
+    <!-- GIF & DESCRIPTION -->
+    <section id="gif" class="section">
+      <h2>Pipeline gif & quick description</h2>
+      <div class="gif-grid">
+        <div class="panel">
+          <h3>Gif placeholder</h3>
+          <img src="assets/gif_placeholder.png" alt="Gif placeholder" style="width:100%; border-radius:12px; border:1px solid #1b2436"/>
+          <p class="note">Replace with your generated gif (e.g. <code>assets/pointmil_flow.gif</code>) and update the <code>src</code>.</p>
+        </div>
+        <div>
+          <p><strong>PointMIL</strong> unifies common point‑cloud backbones with Multiple Instance Learning (MIL) pooling to provide built‑in, point‑level interpretability while
+            improving classification performance. Instance, Attention, Additive, and Conjunctive pooling variants yield explanations directly from the model without post‑hoc saliency.
+          </p>
+          <ul>
+            <li>State‑of‑the‑art performance on IntrA with <em>mACC</em> and <em>F1</em> while producing local explanations.</li>
+            <li>Interpretations highlight class‑discriminative regions (e.g. aneurysm bulges, RBC concavities, drug‑induced protrusions).</li>
+            <li>Contextual attention smooths sparse explanations by sharing neighbourhood evidence.</li>
+          </ul>
         </div>
       </div>
     </section>
-
 
     <!-- BIBTEX -->
     <section id="bibtex" class="section">
@@ -245,38 +208,35 @@
     </section>
 
     <footer>
-      <div>Template © 2025 PointMIL authors. Credits to open-source communities. Hosted on GitHub Pages.</div>
+      <div>Template © 2025 PointMIL authors. Credits to open‑source communities. Hosted on GitHub Pages.</div>
     </footer>
   </div>
 
-  <!-- Three.js (reliable CDN) -->
-  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/examples/js/controls/OrbitControls.js"></script>
+  <!-- Three.js -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/examples/js/controls/OrbitControls.js"></script>
 
-  <!-- Built-in sample so something ALWAYS renders -->
-  <script>
-    const SAMPLE_EMBED = (() => {
-      const pts = [];
-      const N = 1500;
-      for(let i=0;i<N;i++){
-        const u = i/N, v = i * 2.399963229728653; // golden angle
-        const z = 1 - 2*u;
-        const r = Math.sqrt(Math.max(0,1 - z*z));
-        const x = r * Math.cos(v), y = r * Math.sin(v);
-        pts.push([x,y,z]);
-      }
-      const scores = Array.from({length:N}, (_,i)=> i/(N-1));
-      return { name: 'Built-in sanity sample', data: { points: pts, classes: ['Test'], scores: { 'Test': scores } } };
-    })();
-  </script>
 
   <script>
   // ====== Demo data registry ======
   const SAMPLE_MANIFEST = [
-    { name: SAMPLE_EMBED.name, url: null, embedded: SAMPLE_EMBED.data },
+    // Add your samples here. Each entry points to a JSON file following the schema below.
     { name: 'IntrA — Aneurysm (cell 0)', url: 'assets/samples/intra_cell_demo.json' },
-    { name: 'Minimal sanity check (file)', url: 'assets/samples/minimal.json' }
+    { name: 'Minimal sanity check', url: 'assets/samples/minimal.json' },
+
   ];
+
+  // JSON schema example (for reference):
+  // {
+  //   "points": [[x,y,z], ...],                      // N x 3 (floats in world units; normalised ~ [-1,1] recommended)
+  //   "classes": ["No Treatment","Nocodazole","Blebbistatin"],
+  //   "scores": {                                   // per‑class importance ∈ [0,1] for each of N points
+  //       "No Treatment":   [s1, s2, ... sN],
+  //       "Nocodazole":     [s1, s2, ... sN],
+  //       "Blebbistatin":   [s1, s2, ... sN]
+  //   },
+  //   "pred": { "label": "Blebbistatin", "prob": 0.92 } // optional prediction metadata
+  // }
 
   // ====== UI + Scene ======
   const viewerEl = document.getElementById('viewer');
@@ -287,113 +247,80 @@
   const paletteSelect = document.getElementById('paletteSelect');
   const bgSelect = document.getElementById('bgSelect');
   const fileInput = document.getElementById('fileInput');
-  const qualitySelect = document.getElementById('qualitySelect');
-  const sphereSizeRow = document.getElementById('sphereSizeRow');
-  const sphereSize = document.getElementById('sphereSize');
 
   let scene, camera, renderer, controls, pointsObj;
   let currentData = null; // loaded JSON
 
-  // Populate dropdown first (no WebGL required)
-  boot();
-  // Then init 3D; if this fails, dropdown still works
-  try { init(); } catch (e) { console.error("3D init failed:", e); }
+  boot();       // populate the dropdown first (this never needs WebGL)
+  try {
+    init();     // then set up 3D; if this fails, we still have a working dropdown
+  } catch (e) {
+    console.error("3D init failed:", e);
+    // Page still usable; user can download/open JSON manually.
+  }
+
 
   function init(){
     scene = new THREE.Scene();
-    const W = viewerEl.clientWidth || 800;
-    const H = viewerEl.clientHeight || 540;
+    const W = viewerEl.clientWidth; const H = viewerEl.clientHeight;
     camera = new THREE.PerspectiveCamera(45, W/H, 0.01, 100);
-    camera.position.set(1.8, 1.2, 1.8);
+    camera.position.set(1.6, 1.2, 1.6);
 
-    renderer = new THREE.WebGLRenderer({ antialias:true, alpha:false });
-    renderer.setPixelRatio(Math.min(devicePixelRatio || 1, 2));
+    renderer = new THREE.WebGLRenderer({antialias:true, alpha:true});
+    renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
     renderer.setSize(W, H);
-    renderer.shadowMap.enabled = true;
-    renderer.shadowMap.type = THREE.PCFSoftShadowMap;
-    renderer.toneMapping = THREE.ACESFilmicToneMapping;
-    renderer.outputColorSpace = THREE.SRGBColorSpace;   // r160+
     viewerEl.appendChild(renderer.domElement);
 
     if (THREE.OrbitControls) {
       controls = new THREE.OrbitControls(camera, renderer.domElement);
       controls.enableDamping = true;
-      controls.dampingFactor = 0.06;
-      controls.rotateSpeed = 0.9;
-      controls.zoomSpeed = 0.9;
+    } else {
+    console.warn("OrbitControls not found; continuing without mouse controls.");
+    controls = { update: () => {} }; // no-op so animate() still runs
     }
 
-    viewerEl.style.background = bgSelect.value || '#ffffff'; // white like your render
+    const light = new THREE.HemisphereLight(0xffffff, 0x223355, 0.8);
+    scene.add(light);
+    const dir = new THREE.DirectionalLight(0xffffff, 0.6); dir.position.set(2,3,2); scene.add(dir);
 
-    // Lighting + a soft shadow receiver
-    scene.add(new THREE.AmbientLight(0xffffff, 0.55));
-    const key = new THREE.DirectionalLight(0xffffff, 1.1);
-    key.position.set(3, 6, 4);
-    key.castShadow = true;
-    key.shadow.bias = -1e-4;
-    key.shadow.normalBias = 0.02;
-    key.shadow.mapSize.set(2048, 2048);
-    scene.add(key);
-
-    scene.add(new THREE.AxesHelper(0.8)); // can remove later
-
-    // events
     window.addEventListener('resize', onResize);
     bgSelect.addEventListener('change', ()=>{ viewerEl.style.background = bgSelect.value; });
+    viewerEl.style.background = bgSelect.value;
 
     sizeSlider.addEventListener('input', () => updatePointSize());
-    sphereSize.addEventListener('input', () => rebuildGeometry());      // rebuild instanced spheres
-    qualitySelect.addEventListener('change', () => { toggleQualityUI(); rebuildGeometry(); });
     thrSlider.addEventListener('input', () => updateColors());
     classSelect.addEventListener('change', () => updateColors());
     paletteSelect.addEventListener('change', () => updateColors());
-    sampleSelect.addEventListener('change', onSampleChange);
+    sampleSelect.addEventListener('change', () => loadSample(sampleSelect.value));
     fileInput.addEventListener('change', onFile);
 
-
     animate();
-
-    // Load the first sample immediately (embedded is guaranteed)
-    const first = SAMPLE_MANIFEST[0];
-    if (first.embedded) ingestData(first.embedded);
-    else if (first.url) loadSample(first.url);
-  }
-
-  function onSampleChange(){
-    const idx = sampleSelect.selectedIndex;
-    const meta = SAMPLE_MANIFEST[idx];
-    if (meta.embedded) ingestData(meta.embedded);
-    else loadSample(sampleSelect.value);
-  }
-
-  function toggleQualityUI(){
-    const mode = qualitySelect.value;
-    sphereSizeRow.style.display = (mode === 'spheres') ? 'flex' : 'none';
   }
 
   function onResize(){
-    const W = viewerEl.clientWidth || 800; const H = viewerEl.clientHeight || 540;
+    const W = viewerEl.clientWidth; const H = viewerEl.clientHeight;
     camera.aspect = W/H; camera.updateProjectionMatrix();
     renderer.setSize(W, H);
   }
 
   function animate(){
     requestAnimationFrame(animate);
-    controls && controls.update && controls.update();
+    controls.update();
     renderer.render(scene, camera);
   }
 
   async function boot(){
-    SAMPLE_MANIFEST.forEach(s => {
-      const opt = document.createElement('option');
-      opt.textContent = s.name; opt.value = s.url || '';
-      sampleSelect.appendChild(opt);
-    });
+    // Populate samples dropdown
+    for(const s of SAMPLE_MANIFEST){
+      const opt = document.createElement('option'); opt.textContent = s.name; opt.value = s.url; sampleSelect.appendChild(opt);
+    }
+    // Load first sample if present
+    if (SAMPLE_MANIFEST.length){ loadSample(SAMPLE_MANIFEST[0].url); }
   }
 
   async function loadSample(url){
     try{
-      const res = await fetch(url, {cache:'no-store'});
+      const res = await fetch(url, {cache:'no-store'}); // ensure freshest on GH Pages
       const data = await res.json();
       ingestData(data);
     }catch(err){ console.error('Failed to load sample', err); }
@@ -416,82 +343,35 @@
     (data.classes || Object.keys(data.scores || {})).forEach(c => {
       const opt = document.createElement('option'); opt.value = c; opt.textContent = c; classSelect.appendChild(opt);
     });
-    buildPointsOrSpheres(data);
+    // scatter
+    buildPoints(data);
     updateColors();
   }
 
-  let ground = null;
-  let sphereMesh = null; // InstancedMesh for HQ mode
-
-  function buildPointsOrSpheres(data){
-    // Clean previous
-    if(pointsObj){ scene.remove(pointsObj); pointsObj.geometry?.dispose(); pointsObj.material?.dispose(); pointsObj = null; }
-    if(sphereMesh){ scene.remove(sphereMesh); sphereMesh.geometry?.dispose(); sphereMesh.material?.dispose(); sphereMesh = null; }
-    if(ground){ scene.remove(ground); ground.geometry?.dispose(); ground.material?.dispose(); ground = null; }
-
-    const N = data.points.length;
-    const positions = new Float32Array(N*3);
-    for (let i=0;i<N;i++){
-      const p = data.points[i];
-      positions[i*3+0] = p[0]; positions[i*3+1] = p[1]; positions[i*3+2] = p[2];
-    }
-
-    // Compute bounds to place camera & ground
-    const geomForBounds = new THREE.BufferGeometry();
-    geomForBounds.setAttribute('position', new THREE.BufferAttribute(positions, 3));
-    geomForBounds.computeBoundingSphere();
-    const sphere = geomForBounds.boundingSphere;
-
-    if (qualitySelect.value === 'spheres') {
-      // ---- High Quality: Instanced spheres with soft shadows ----
-      const radius = parseFloat(sphereSize.value);         // world units
-      const geo = new THREE.SphereGeometry(radius, 16, 12);
-      const mat = new THREE.MeshStandardMaterial({
-        color: 0xffffff,
-        metalness: 0.05,
-        roughness: 0.35
-      });
-      const inst = new THREE.InstancedMesh(geo, mat, N);
-      inst.castShadow = true;
-      inst.receiveShadow = false;
-
-      const dummy = new THREE.Object3D();
-      const color = new THREE.Color();
-      for(let i=0;i<N;i++){
-        dummy.position.set(positions[i*3+0], positions[i*3+1], positions[i*3+2]);
-        dummy.updateMatrix();
-        inst.setMatrixAt(i, dummy.matrix);
-        // default light gray; real colors come in updateColors()
-        inst.setColorAt(i, color.setRGB(0.72, 0.72, 0.72));
+  function buildPoints(data){
+      if(pointsObj){
+        scene.remove(pointsObj);
+        pointsObj.geometry?.dispose();
+        pointsObj.material?.dispose();
+        pointsObj = null;
       }
-      inst.instanceMatrix.needsUpdate = true;
-      inst.instanceColor.needsUpdate = true;
-      sphereMesh = inst;
-      scene.add(inst);
 
-      // Soft shadow receiver (ground)
-      const bbox = new THREE.Box3().setFromBufferAttribute(geomForBounds.getAttribute('position'));
-      const minY = bbox.min.y;
-      ground = new THREE.Mesh(
-        new THREE.PlaneGeometry(50, 50),
-        new THREE.ShadowMaterial({ opacity: 0.22 })
-      );
-      ground.rotation.x = -Math.PI/2;
-      ground.position.set(sphere.center.x, minY - radius*0.8, sphere.center.z);
-      ground.receiveShadow = true;
-      scene.add(ground);
+      const N = data.points.length;
+      const positions = new Float32Array(N*3);
+      for (let i=0;i<N;i++){
+        const p = data.points[i];
+        positions[i*3+0] = p[0]; positions[i*3+1] = p[1]; positions[i*3+2] = p[2];
+      }
 
-      fitView(sphere);
-    } else {
-      // ---- Fast: GL Points ----
       const geometry = new THREE.BufferGeometry();
       geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
       geometry.setAttribute('importance', new THREE.BufferAttribute(new Float32Array(N), 1));
       geometry.setAttribute('color', new THREE.BufferAttribute(new Float32Array(N*3), 3));
 
+      // Screen-space size (pixels), always visible
       const material = new THREE.PointsMaterial({
         size: Math.max(2, parseInt(sizeSlider.value, 10)), // pixels
-        sizeAttenuation: false,
+        sizeAttenuation: false,   // <- IMPORTANT: pixels, not world units
         vertexColors: true,
         transparent: true,
         opacity: 1.0
@@ -503,88 +383,72 @@
       geometry.computeBoundingSphere();
       fitView(geometry.boundingSphere);
 
-      // default neutral colour
+      // Set a non-black default so something shows even before updateColors()
       const colors = geometry.getAttribute('color');
-      for (let i=0;i<N;i++){ colors.setXYZ(i, 0.72, 0.72, 0.72); }
+      for (let i=0;i<N;i++){ colors.setXYZ(i, 0.7, 0.7, 0.7); }
       colors.needsUpdate = true;
-    }
+   }
 
-    // dispose temp
-    geomForBounds.dispose();
+  function pixelSize(ui){
+    // convert UI slider to world units scaled to bounding box
+    const bs = pointsObj?.geometry?.boundingSphere; if(!bs) return 0.02;
+    return (bs.radius || 1) * 0.007 * (ui/3);
   }
 
-  function rebuildGeometry(){
-    if(!currentData) return;
-    buildPointsOrSpheres(currentData);
-    updateColors();
-  }
   function fitView(sphere){
     if(!sphere) return;
-    const r = sphere.radius * 1.6;
+    const r = sphere.radius * 1.6; // padding
     const fov = camera.fov * Math.PI/180;
     const dist = r / Math.tan(fov/2);
     const center = sphere.center;
-    controls?.target?.copy?.(center);
-    camera.position.set(center.x + dist, center.y + dist*0.6, center.z + dist);
+    controls.target.copy(center);
+    camera.position.copy(new THREE.Vector3(center.x + dist, center.y + dist*0.6, center.z + dist));
     camera.lookAt(center);
   }
 
   function updatePointSize(){
-    if(pointsObj){
-      pointsObj.material.size = Math.max(2, parseInt(sizeSlider.value, 10));
-      pointsObj.material.needsUpdate = true;
-    }
-    // spheres use sphereSize slider; handled by rebuildGeometry()
-  }
+      if(pointsObj){
+        pointsObj.material.size = Math.max(2, parseInt(sizeSlider.value, 10));
+        pointsObj.material.needsUpdate = true;
+      }
+   }
 
   function updateColors(){
-    if(!currentData) return;
+      if(!currentData || !pointsObj) return;
 
-    const cls = classSelect.value || (currentData.classes?.[0] || Object.keys(currentData.scores||{})[0]);
-    const imp = (currentData.scores?.[cls]) || new Array(currentData.points.length).fill(0);
-    const thr = parseFloat(thrSlider.value);
-    const pal = paletteSelect.value;
+      const cls = classSelect.value || (currentData.classes?.[0] || Object.keys(currentData.scores||{})[0]);
+      let imp = (currentData.scores?.[cls]) || new Array(currentData.points.length).fill(0);
+      const thr = parseFloat(thrSlider.value);
+      const pal = paletteSelect.value;
 
-    if (sphereMesh){
-      const N = imp.length;
-      const color = new THREE.Color();
-      let allMasked = true;
-      for(let i=0;i<N;i++){
-        const v = Math.max(0, Math.min(1, imp[i]));
-        const m = v < thr ? 0 : v;
-        const [r,g,b] = palette(m, pal);
-        color.setRGB(r,g,b);
-        sphereMesh.setColorAt(i, color);
-        if (m > 0.001) allMasked = false;
-      }
-      if (allMasked){
-        for(let i=0;i<N;i++) sphereMesh.setColorAt(i, new THREE.Color(0.6,0.6,0.6));
-      }
-      sphereMesh.instanceColor.needsUpdate = true;
-    } else if (pointsObj){
       const colors = pointsObj.geometry.getAttribute('color');
       const impAttr = pointsObj.geometry.getAttribute('importance');
       let allMasked = true;
+
       for(let i=0;i<imp.length;i++){
         const v = Math.max(0, Math.min(1, imp[i]));
-        const m = v < thr ? 0 : v;
+        const m = v < thr ? 0 : v; // threshold mask
         const [r,g,b] = palette(m, pal);
         colors.setXYZ(i, r, g, b);
         impAttr.setX(i, v);
         if (m > 0.001) allMasked = false;
       }
+
+      // If everything masked or flat, show neutral grey
       if (allMasked){
         for(let i=0;i<imp.length;i++) colors.setXYZ(i, 0.6, 0.6, 0.6);
       }
+
       colors.needsUpdate = true;
       impAttr.needsUpdate = true;
     }
-  }
 
 
   function palette(t, mode){
+    // t ∈ [0,1]
     if(mode === 'gray') return [t,t,t];
     if(mode === 'viridis'){
+      // very small viridis approx
       const a = [0.267, 0.005, 0.329];
       const b = [0.283, 0.141, 0.456];
       const c = [0.254, 0.265, 0.530];
@@ -606,29 +470,5 @@
     return [r, Math.max(g, 0.0001), Math.max(b*0.4, 0.0001)];
   }
   </script>
-
-  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
-
-  <script>
-      const mv = document.getElementById('pubvisViewer');
-    const glbSelect = document.getElementById('glbSelect');
-    const autorotSelect = document.getElementById('autorotSelect');
-    const shadowSlider = document.getElementById('shadowSlider');
-    const expSlider = document.getElementById('expSlider');
-    const bgHQ = document.getElementById('bgHQ');
-
-    glbSelect?.addEventListener('change', () => { mv.src = glbSelect.value; });
-    autorotSelect?.addEventListener('change', () => {
-      if (autorotSelect.value === 'on') mv.setAttribute('auto-rotate', '');
-      else mv.removeAttribute('auto-rotate');
-    });
-    shadowSlider?.addEventListener('input', () => { mv.shadowIntensity = parseFloat(shadowSlider.value); });
-    expSlider?.addEventListener('input', () => { mv.exposure = parseFloat(expSlider.value); });
-    bgHQ?.addEventListener('change', () => { mv.style.background = bgHQ.value; });
-
-    // defaults
-    mv.style.background = '#ffffff';
-  </script>
-
 </body>
 </html>
