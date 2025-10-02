@@ -143,6 +143,78 @@
   @media (max-width: 980px){
     .demo{ grid-template-columns: 1fr; }
   }
+    /* Center just the "PointMIL in a nutshell" heading */
+#summary > h2{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Center the cards row */
+#summary .icon-row{
+  display: flex;
+  justify-content: center;   /* centers the row */
+  gap: 14px;
+  flex-wrap: wrap;           /* wrap nicely on small screens */
+  margin: 12px auto 0;       /* center the row container */
+}
+
+/* Keep each card’s content centered */
+#summary .icon-link{
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 12px 16px;
+  background: var(--chip);
+  border: 1px solid #23314a;
+  border-radius: 12px;
+}
+/* Pooling cards grid */
+  .pooling-grid{
+    display:grid;
+    grid-template-columns: repeat(2, minmax(0,1fr));
+    gap:16px;
+    margin-top:12px;
+  }
+  .pool-card{
+    background: var(--card);
+    border:1px solid #182032;
+    border-radius:12px;
+    box-shadow: var(--shadow);
+    padding:14px 16px;
+  }
+  .pool-card h3{
+    margin:0 0 6px;
+    font-size:18px;
+    display:flex; align-items:center; gap:8px;
+  }
+  .pool-card p{
+    margin:6px 0 10px;
+    color: var(--muted);
+    line-height:1.5;
+  }
+  .eq{
+    background:#0c1220;
+    border:1px solid #1b2436;
+    border-radius:10px;
+    padding:10px 12px;
+    overflow:auto;
+    margin-top:8px;
+  }
+  /* Contextual attention box */
+  .contextual{
+    margin-top:18px;
+    background:linear-gradient(180deg,#121825,#0f1522);
+    border:1px solid #1b2436;
+    border-radius:12px;
+    padding:14px 16px;
+  }
+  .contextual h3{ margin:0 0 6px; font-size:18px; }
+  @media (max-width: 980px){
+    .pooling-grid{ grid-template-columns: 1fr; }
+  }
+
   </style>
 </head>
 <body>
@@ -163,7 +235,7 @@
                             </div>
                             <div class="icon-item" style="text-align: left;">
                                 <div style="font-size: 2rem; margin-bottom: 0.5rem; margin-right: 0.5rem;"> </div>
-                                <div style="font-size: 1.05rem;"><strong>💡 Novel dataset</strong>: We introduce ATLAS-1, a novel dataset of drug-treated cancer cells, and use it to show how PointMIL captures fine-grained morphological effects of treatment, with implications for drug discovery and mechanism-of-action prediction.</div>
+                                <div style="font-size: 1.05rem;"><strong>💡 Novel dataset</strong>: We introduce <strong>ATLAS-1</strong>, a novel dataset of drug-treated cancer cells, and use it to show how PointMIL captures fine-grained morphological effects of treatment, with implications for drug discovery and mechanism-of-action prediction.</div>
                             </div>
                             <div class="icon-item" style="text-align: left;">
                                 <div style="font-size: 2rem; margin-bottom: 0.5rem; margin-right: 0.5rem;"> </div>
@@ -326,8 +398,6 @@
           <div style="font-size:1.4rem">💎</div>
           Results &amp;<br>Capabilities
         </a>
-      </div>
-      <p class="click-hint">Click a card to jump to a section.</p>
 
       <!-- 🔮 Overview -->
       <div id="overview" class="vision-block">
@@ -373,39 +443,103 @@
       <!-- 🛠️ Methods -->
       <div id="methods" class="data-block">
         <h1 class="text">🛠️ Algorithm Details</h1>
-        <p class="text">
-          Given per-point features <code>h<sub>i</sub></code>, a MIL head aggregates them into a bag-level logit
-          <code>f(h<sub>1..N</sub>)</code>. We provide interchangeable pooling operators:
-        </p>
-        <div class="subsection">
-          <ul class="text">
-            <li><strong>Instance pooling:</strong> max/Top-k over point evidence; highlights the most discriminative regions.</li>
-            <li><strong>Attention pooling:</strong> learned weights over points with optional neighborhood smoothing.</li>
-            <li><strong>Additive pooling:</strong> sums normalized evidence for robust, dense attributions.</li>
-            <li><strong>Conjunctive pooling:</strong> encourages multi-part evidence (AND-like) for structured phenomena.</li>
-          </ul>
-        </div>
+        <p class="notation">
+  Let \( \mathbf{P}=\{\mathbf{p}_i\}_{i=1}^N \subset \mathbb{R}^3 \) with features
+  \( \mathbf{F}=\{\mathbf{f}_i\}_{i=1}^N \in \mathbb{R}^{d_{\text{in}}} \).
+  A point encoder \( f_{\text{enc}} \) yields per-point embeddings \( \mathbf{z}_i \in \mathbb{R}^d \).
+  An MIL head \( f_{\text{MIL}} \) aggregates them into bag-level logits
+  \( \hat{\mathbf{Y}} = f_{\text{MIL}}(\{\mathbf{z}_i\}_{i=1}^N) \in \mathbb{R}^c \),
+  where \( f_{\text{MIL}} \in \{\text{Instance},\text{Attention},\text{Additive},\text{Conjunctive}\} \).
+</p>
+        <!-- MIL Pooling: summaries + equations -->
+<div class="pooling-grid">
+  <!-- Instance -->
+  <div class="pool-card" id="pool-instance">
+    <h3>Instance pooling</h3>
+    <p>
+      Classify each point, then average the per-point predictions to get the bag prediction. This assigns per-point responsibility transparently.
+    </p>
+    <div class="eq">
+      \[
+      \hat{\mathbf{y}}_{i} \in \mathbb{R}^{c} = f_{\mathrm{clf}}(\mathbf{z}_{i}),
+      \qquad
+      \hat{\mathbf{Y}} = \frac{1}{N}\sum_{i=1}^{N} \hat{\mathbf{y}}_{i}.
+      \]
+    </div>
+  </div>
 
-        <div class="d-figure">
-          <figure>
-            <img src="assets/figs/methods_pointmil.png" alt="PointMIL pooling variants">
-            <figcaption>
-              <strong>Figure 2.</strong> Pooling variants trade off sparsity vs. stability and can be chosen per dataset/task.
-            </figcaption>
-          </figure>
-        </div>
+  <!-- Attention -->
+  <div class="pool-card" id="pool-attention">
+    <h3>Attention pooling</h3>
+    <p>
+      Learn attention weights over points, pool a weighted feature, then classify the pooled feature.
+    </p>
+    <div class="eq">
+      \[
+      a_i \in [0,1] = f_{\mathrm{attn}}(\mathbf{z}_i), \qquad
+      \hat{\mathbf{Y}} = f_{\mathrm{clf}}\!\left(\frac{1}{N}\sum_{i=1}^{N} a_i \,\mathbf{z}_i\right).
+      \]
+    </div>
+  </div>
 
-        <div class="subsection">
-          <h3 class="text">Training</h3>
-          <p class="text">
-            Standard cross-entropy on bag labels with regularizers for smoothness/sparsity depending on pooling.
-            Backbones are trained end-to-end; importance emerges directly from the pooling weights/scores.
-          </p>
-          <h3 class="text">Inference</h3>
-          <p class="text">
-            A single forward pass yields the class prediction and per-class importance over points (visualized as gray→red in the demo).
-          </p>
-        </div>
+  <!-- Additive -->
+  <div class="pool-card" id="pool-additive">
+    <h3>Additive pooling</h3>
+    <p>
+      Weight each point’s features, classify each weighted point, then average the per-point predictions.
+    </p>
+    <div class="eq">
+      \[
+      a_i \in [0,1] = f_{\mathrm{attn}}(\mathbf{z}_i), \quad
+      \hat{\mathbf{y}}_{i} = f_{\mathrm{clf}}(a_i\,\mathbf{z}_i), \quad
+      \hat{\mathbf{Y}} = \frac{1}{N}\sum_{i=1}^{N} \hat{\mathbf{y}}_{i}.
+      \]
+    </div>
+  </div>
+
+  <!-- Conjunctive -->
+  <div class="pool-card" id="pool-conjunctive">
+    <h3>Conjunctive pooling</h3>
+    <p>
+      Learn attention and classification heads independently on features; combine by a weighted mean of per-point predictions.
+    </p>
+    <div class="eq">
+      \[
+      a_i \in [0,1] = f_{\mathrm{attn}}(\mathbf{z}_i), \quad
+      \hat{\mathbf{y}}_{i} = f_{\mathrm{clf}}(\mathbf{z}_i), \quad
+      \hat{\mathbf{Y}} = \frac{1}{N}\sum_{i=1}^{N} a_i\,\hat{\mathbf{y}}_{i}.
+      \]
+    </div>
+  </div>
+</div>
+
+<!-- Contextual attention -->
+<div class="contextual" id="contextual-attn">
+  <h3>Contextual attention (smoothing)</h3>
+  <p>
+    Attention can be sparse; we smooth weights by averaging over each point’s local neighborhood, improving coverage of discriminative regions.
+  </p>
+  <div class="eq">
+    \[
+    a_i \in [0,1] = f_{\mathrm{attn}}(\mathbf{z}_i), \qquad
+    a_i^{\text{new}} = \frac{1}{k}\!\!\sum_{j \in \mathcal{N}(\mathbf{p}_i)}\! a_j .
+    \]
+  </div>
+</div>
+          <div class="subsection" id="interpretability">
+  <h3>Interpretability</h3>
+  <p class="notation">
+    For <em>Instance</em>, point-level scores come directly from per-point logits:
+    \( \{\hat{\mathbf{y}}_i\}_{i=1}^N \).
+    <em>Additive</em> and <em>Conjunctive</em> scale these by attention:
+    \( \{ a_i\,\hat{\mathbf{y}}_i \}_{i=1}^N \).
+    We apply softmax over classes and read the target class component to get a scalar
+    per point. For <em>Attention</em>, the weights \( \mathbf{a}=\{a_i\}_{i=1}^N \)
+    provide non–class-specific importance.
+  </p>
+</div>
+
+
       </div>
 
       <!-- 💎 Results -->
@@ -493,6 +627,12 @@
   <!-- Three.js (reliable CDN) -->
   <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/examples/js/controls/OrbitControls.js"></script>
+
+  <!-- MathJax for equations -->
+  <script id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
 
   <!-- Built-in sample so something ALWAYS renders -->
   <script>
