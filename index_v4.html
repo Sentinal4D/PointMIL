@@ -72,10 +72,29 @@
     .legend{display:flex; align-items:center; gap:8px; font-size:12px; margin-top:8px; color:var(--muted)}
     .chip{padding:4px 8px; background:#0e1422; border:1px solid #23314a; border-radius:999px}
 
-    /* GIF / code block */
+    /* GIF SECTION */
     .gif-grid{display:grid; grid-template-columns:1fr 1fr; gap:18px}
     .note{font-size:14px; color:var(--muted)}
     pre{background:#0c1220; border:1px solid #1b2436; padding:14px; border-radius:10px; overflow:auto}
+
+    /* --- SUMMARY SECTIONS (PointMIL) --- */
+    .icon-row{display:flex; flex-wrap:wrap; gap:14px; margin:18px 0 6px}
+    .icon-link{display:flex; flex-direction:column; align-items:center; gap:6px; background:var(--chip); border:1px solid #23314a; padding:12px 14px; border-radius:12px; color:var(--fg); font-weight:600; text-align:center; width:130px}
+    .icon-link:hover{filter:brightness(1.05); text-decoration:none}
+    .click-hint{display:flex; align-items:center; gap:10px; margin:10px 0 0; color:var(--muted); font-size:14px}
+
+    .vision-block,.connector-block,.data-block,.sota-block{
+      background:var(--card); border:1px solid #182032; border-radius:14px; padding:18px; box-shadow:var(--shadow); margin-top:18px
+    }
+    .vision-block h1,.connector-block h1,.data-block h1,.sota-block h1{font-size:24px; margin:2px 0 12px}
+    .text{color:var(--fg); line-height:1.65}
+    .subsection{margin:14px 0}
+    d-figure, .d-figure{display:block; margin:14px 0}
+    figure{margin:0}
+    figure img{width:100%; height:auto; border-radius:10px; border:1px solid #1b2436}
+    figcaption{color:var(--muted); font-size:13px; margin-top:8px}
+    ul.text{padding-left:18px}
+
 
     /* FOOTER */
     .bibtex{white-space:pre-wrap; background:#0c1220; border:1px solid #1b2436; padding:14px; border-radius:10px; font-family:"Source Code Pro", monospace; font-size:13px}
@@ -86,92 +105,15 @@
       .demo{grid-template-columns:1fr}
       #viewer{height:460px}
     }
-
-    /* --- SUMMARY SECTIONS (PointMIL) --- */
-    .icon-row{display:flex; flex-wrap:wrap; gap:14px; margin:18px 0 6px}
-    .icon-link{display:flex; flex-direction:column; align-items:center; gap:6px; background:var(--chip); border:1px solid #23314a; padding:12px 14px; border-radius:12px; color:var(--fg); font-weight:600; text-align:center; width:130px}
-    .icon-link:hover{filter:brightness(1.05); text-decoration:none}
-    .click-hint{display:flex; align-items:center; gap:10px; margin:10px 0 0; color:var(--muted); font-size:14px}
-    .vision-block,.connector-block,.data-block,.sota-block{
-      background:var(--card); border:1px solid #182032; border-radius:14px; padding:18px; box-shadow:var(--shadow); margin-top:18px
-    }
-    .vision-block h1,.connector-block h1,.data-block h1,.sota-block h1{font-size:24px; margin:2px 0 12px}
-    .text{color:var(--fg); line-height:1.65}
-    .subsection{margin:14px 0}
-    .d-figure{display:block; margin:14px 0}
-    figure{margin:0}
-    figure img{width:100%; height:auto; border-radius:10px; border:1px solid #1b2436}
-    figcaption{color:var(--muted); font-size:13px; margin-top:8px}
-    ul.text{padding-left:18px}
-
-        /* Full-bleed sections that break out of the .wrap container */
-  .fullbleed{
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    width: 100vw;
-    padding-left: 20px;   /* keep your page padding on edges */
-    padding-right: 20px;
-  }
-
-  /* Prevent grid column from collapsing and make the 3D area breathe */
-  .demo{
-    display:grid;
-    grid-template-columns: minmax(0, 1fr) 360px;  /* <- was 1fr 360px; */
-    gap:20px;
-  }
-
-  /* Make viewer tall and responsive */
-  #viewer{
-    height: clamp(420px, 62vh, 820px);            /* <- more vertical space */
-    min-width: 300px;
-  }
-
-  /* Same for the GLB viewer */
-  model-viewer#pubvisViewer{
-    height: clamp(420px, 62vh, 820px) !important;
-  }
-
-  /* Optional: widen the overall page a bit so it feels less cramped */
-  .wrap{
-    max-width: min(100%, 1400px);                 /* <- was 1080px */
-  }
-
-  /* On narrow screens, stack cleanly */
-  @media (max-width: 980px){
-    .demo{ grid-template-columns: 1fr; }
-  }
   </style>
 </head>
 <body>
   <div class="wrap">
     <!-- HERO -->
-    <section class="hero fullbleed">
+    <section class="hero">
       <div>
         <h1 class="title">Interpretable Point-Cloud Classification using Multiple Instance Learning</h1>
         <p class="subtitle">ICCV 2025 <span class="chip">Highlight</span></p>
-          <p style="font-size: 1.2rem; line-height: 1.6; margin: 1.5rem 0;">
-                            Three‑dimensional point clouds are ubiquitous in science and industry, yet many state‑of‑the‑art classifiers behave as opaque black boxes.
-                            <strong>PointMIL</strong> introduces an inherently interpretable framework that leverages multiple instance learning (MIL) to jointly improve accuracy and provide fine‑grained, point‑level explanations.
-                        </p>
-          <div class="icon-container" style="justify-content: flex-start; text-align: left; margin: 2rem 0;">
-                            <div class="icon-item" style="text-align: left;">
-                                <div style="font-size: 2rem; margin-bottom: 0.5rem; margin-right: 0.5rem;"> </div>
-                                <div style="font-size: 1.05rem;"><strong>🔮 Overview</strong>: We unify common point cloud backbones and feature aggregation strategies within a MIL framework to enable inherently interpretable classification.</div>
-                            </div>
-                            <div class="icon-item" style="text-align: left;">
-                                <div style="font-size: 2rem; margin-bottom: 0.5rem; margin-right: 0.5rem;"> </div>
-                                <div style="font-size: 1.05rem;"><strong>💡 Novel dataset</strong>: We introduce ATLAS-1, a novel dataset of drug-treated cancer cells, and use it to show how PointMIL captures fine-grained morphological effects of treatment, with implications for drug discovery and mechanism-of-action prediction.</div>
-                            </div>
-                            <div class="icon-item" style="text-align: left;">
-                                <div style="font-size: 2rem; margin-bottom: 0.5rem; margin-right: 0.5rem;"> </div>
-                                <div style="font-size: 1.05rem;"><strong>💎 Results & Capabilities</strong>: Achieve state-of-the-art performance while offering point-level explanations without the need for post-hoc saliency or perturbation-based methods.</div>
-                            </div>
-                        </div>
-
-
         <div class="authors">
           <span class="author"><a href="https://www.linkedin.com/in/matthewdevries13/">Matt De Vries</a><sup>1,2,3</sup></span>
           <span class="author"><a href="https://www.linkedin.com/in/reed-naidoo-02329a223/">Reed Naidoo</a><sup>1,2</sup></span>
@@ -191,27 +133,24 @@
           <a class="btn" href="#demo"><i class="fa-solid fa-cube"></i> Interactive demo</a>
           <a class="btn" href="https://sentinal4d.github.io/PointMIL/atlas-1" target="_blank"><i class="ai ai-open-access"></i> ATLAS-1</a>
           <a class="btn" href="https://www.youtube.com/watch?v=XXXXXXXX" target="_blank"><i class="fa-brands fa-youtube"></i> Video</a>
-          <a class="btn" href="#summary"><i class="fa-solid fa-list"></i> Summary</a>
           <a class="btn" href="#bibtex"><i class="fa-solid fa-quote-right"></i> BibTeX</a>
         </div>
 
-
-
-<!--        <div class="badges">-->
-<!--          <span class="badge"><i class="fa-solid fa-bolt"></i> Accurate</span>-->
-<!--          <span class="badge"><i class="fa-solid fa-magnifying-glass"></i> Point-level explanations</span>-->
-<!--          <span class="badge"><i class="fa-solid fa-layer-group"></i> MIL pooling (Instance / Attention / Additive / Conjunctive)</span>-->
-<!--        </div>-->
+        <div class="badges">
+          <span class="badge"><i class="fa-solid fa-bolt"></i> Accurate</span>
+          <span class="badge"><i class="fa-solid fa-magnifying-glass"></i> Point-level explanations</span>
+          <span class="badge"><i class="fa-solid fa-layer-group"></i> MIL pooling (Instance / Attention / Additive / Conjunctive)</span>
+        </div>
       </div>
       <div class="hero-card">
-        <img src="assets/logo_black.png" alt="PointMIL overview" />
+        <img src="assets/figures/pointmil_pipeline_iccv.png" alt="PointMIL overview" />
       </div>
     </section>
 
     <!-- DEMO -->
     <section id="demo" class="section">
       <h2>Interactive demo</h2>
-      <p>Load a sample point cloud and visualise PointMIL's point-level importance (gray → red). Toggle class, palette, and thresholds. Drop your own <code>.json</code> files that follow the schema below.</p>
+      <p>Load a sample point cloud and visualise PointMIL's point-level importance (red = more important). Toggle class, palette, and thresholds. Drop your own <code>.json</code> files that follow the schema below.</p>
       <div class="demo">
         <div id="viewer"></div>
         <div class="panel">
@@ -261,218 +200,57 @@
         </div>
       </div>
     </section>
+    <section id="hq" class="section">
+      <h2>High-quality interactive render (pubvis)</h2>
+      <p>Studio-quality sphere-glyph rendering with soft shadows (exported via bproc-pubvis).</p>
 
-<!--    &lt;!&ndash; HQ GLB VIEW &ndash;&gt;-->
-<!--    <section id="hq" class="section">-->
-<!--      <h2>High-quality interactive render (pubvis)</h2>-->
-<!--      <p>Studio-quality sphere-glyph rendering with soft shadows (exported via bproc-pubvis).</p>-->
+      <div class="panel" style="padding:0; overflow:hidden">
+        <model-viewer id="pubvisViewer"
+          src="/home/mvries/Documents/Sentinal4D/GitHub/PointMIL/assets/models/intra_cell_redgray.glb"
+          camera-controls auto-rotate
+          tone-mapping="neutral" shadow-intensity="1"
+          exposure="1.05" environment-image="neutral"
+          style="width:100%; height:520px; display:block; background:#fff">
+        </model-viewer>
+<!--          <model-viewer id="pubvisViewer"-->
+<!--              src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"-->
+<!--              camera-controls auto-rotate shadow-intensity="1" exposure="1.05"-->
+<!--              style="width:100%; height:520px; display:block; background:#fff">-->
+<!--            </model-viewer>-->
 
-<!--      <div class="panel" style="padding:0; overflow:hidden">-->
-<!--        <model-viewer id="pubvisViewer"-->
-<!--          src="assets/models/intra_cell_redgray.glb"-->
-<!--          camera-controls auto-rotate-->
-<!--          tone-mapping="neutral" shadow-intensity="1"-->
-<!--          exposure="1.05" environment-image="neutral"-->
-<!--          style="width:100%; height:520px; display:block; background:#fff">-->
-<!--        </model-viewer>-->
-<!--      </div>-->
-
-<!--      <div class="panel" style="margin-top:12px">-->
-<!--        <div class="ctrl">-->
-<!--          <div class="row"><label>Model</label>-->
-<!--            <select id="glbSelect">-->
-<!--              <option value="assets/models/intra_cell_redgray.glb">IntrA — Pred=1 (red/gray)</option>-->
-<!--            </select>-->
-<!--          </div>-->
-<!--          <div class="row"><label>Auto-rotate</label>-->
-<!--            <select id="autorotSelect">-->
-<!--              <option value="on">On</option><option value="off">Off</option>-->
-<!--            </select>-->
-<!--          </div>-->
-<!--          <div class="row"><label>Shadow</label>-->
-<!--            <input id="shadowSlider" type="range" min="0" max="2" step="0.05" value="1.0"/>-->
-<!--          </div>-->
-<!--          <div class="row"><label>Exposure</label>-->
-<!--            <input id="expSlider" type="range" min="0.6" max="1.6" step="0.02" value="1.05"/>-->
-<!--          </div>-->
-<!--          <div class="row"><label>Background</label>-->
-<!--            <select id="bgHQ">-->
-<!--              <option value="#ffffff">White</option>-->
-<!--              <option value="#f6f7f9">Paper</option>-->
-<!--              <option value="#0b0d12">Dark</option>-->
-<!--            </select>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </section>-->
-
-    <!-- ===================== POINTMIL SUMMARY SECTIONS ===================== -->
-    <section id="summary" class="section">
-      <h2>PointMIL in a nutshell</h2>
-      <div class="icon-row">
-        <a href="#overview" class="icon-link">
-          <div style="font-size:1.4rem">🔮</div>
-          Method<br>Overview
-        </a>
-        <a href="#innovation" class="icon-link">
-          <div style="font-size:1.4rem">💡</div>
-          Key<br>Innovation
-        </a>
-        <a href="#methods" class="icon-link">
-          <div style="font-size:1.4rem">🛠️</div>
-          Algorithm<br>Details
-        </a>
-        <a href="#capabilities" class="icon-link">
-          <div style="font-size:1.4rem">💎</div>
-          Results &amp;<br>Capabilities
-        </a>
-      </div>
-      <p class="click-hint">Click a card to jump to a section.</p>
-
-      <!-- 🔮 Overview -->
-      <div id="overview" class="vision-block">
-        <h1 class="text">🔮 Method Overview</h1>
-        <p class="text">
-          <strong>PointMIL</strong> is an inherently interpretable framework for <em>point-cloud classification</em>.
-          We treat each point cloud as a <em>bag</em> of instances and learn to aggregate evidence with Multiple Instance
-          Learning (MIL). Unlike post-hoc saliency, PointMIL’s <em>pooling mechanism</em> yields <strong>point-level
-          importance</strong> as part of the forward pass, so explanations are aligned with the model’s actual decision rule.
-        </p>
-
-        <div class="d-figure">
-          <figure>
-            <img src="assets/figures/pointmil_pipeline_iccv.png" alt="PointMIL overview">
-            <figcaption>
-              <strong>Figure 1.</strong> PointMIL wraps common point backbones with MIL pooling to produce class predictions
-              and point-level importance simultaneously.
-            </figcaption>
-          </figure>
-        </div>
-
-        <ul class="text">
-          <li><strong>Backbones:</strong> works with standard point-based classifiers (e.g., PointNet, DGCNN, CurveNet).</li>
-          <li><strong>MIL Pooling:</strong> Instance / Attention / Additive / Conjunctive variants.</li>
-          <li><strong>Outputs:</strong> class probabilities + calibrated point-level importance per class.</li>
-        </ul>
       </div>
 
-      <!-- 💡 Innovation -->
-      <div id="innovation" class="connector-block">
-        <h1 class="text">💡 Key Innovation</h1>
-        <p class="text">
-          We unify popular point-cloud feature extractors with <em>MIL pooling</em> to make interpretability
-          <strong>structural</strong>, not post-hoc. The pooling layer acts as a transparent evidence combiner, so the same
-          scores that drive the prediction also surface the <em>discriminative regions</em>.
-        </p>
-        <ul class="text">
-          <li><strong>Inherent interpretation:</strong> importance = contribution used in the decision, no surrogate maps.</li>
-          <li><strong>Pooling family:</strong> swap-in choices (Instance, Attention, Additive, Conjunctive) balance sparsity, stability, and context-sharing.</li>
-        </ul>
-      </div>
-
-      <!-- 🛠️ Methods -->
-      <div id="methods" class="data-block">
-        <h1 class="text">🛠️ Algorithm Details</h1>
-        <p class="text">
-          Given per-point features <code>h<sub>i</sub></code>, a MIL head aggregates them into a bag-level logit
-          <code>f(h<sub>1..N</sub>)</code>. We provide interchangeable pooling operators:
-        </p>
-        <div class="subsection">
-          <ul class="text">
-            <li><strong>Instance pooling:</strong> max/Top-k over point evidence; highlights the most discriminative regions.</li>
-            <li><strong>Attention pooling:</strong> learned weights over points with optional neighborhood smoothing.</li>
-            <li><strong>Additive pooling:</strong> sums normalized evidence for robust, dense attributions.</li>
-            <li><strong>Conjunctive pooling:</strong> encourages multi-part evidence (AND-like) for structured phenomena.</li>
-          </ul>
-        </div>
-
-        <div class="d-figure">
-          <figure>
-            <img src="assets/figs/methods_pointmil.png" alt="PointMIL pooling variants">
-            <figcaption>
-              <strong>Figure 2.</strong> Pooling variants trade off sparsity vs. stability and can be chosen per dataset/task.
-            </figcaption>
-          </figure>
-        </div>
-
-        <div class="subsection">
-          <h3 class="text">Training</h3>
-          <p class="text">
-            Standard cross-entropy on bag labels with regularizers for smoothness/sparsity depending on pooling.
-            Backbones are trained end-to-end; importance emerges directly from the pooling weights/scores.
-          </p>
-          <h3 class="text">Inference</h3>
-          <p class="text">
-            A single forward pass yields the class prediction and per-class importance over points (visualized as gray→red in the demo).
-          </p>
-        </div>
-      </div>
-
-      <!-- 💎 Results -->
-      <div id="capabilities" class="sota-block">
-        <h1 class="text">💎 Results &amp; Capabilities</h1>
-        <div class="subsection">
-          <h3 class="text">Interpretability</h3>
-          <p class="text">
-            PointMIL delivers competitive or state-of-the-art accuracy while providing faithful point-level explanations on datasets such as
-            <em>IntrA</em>, <em>RBC</em>, <em>ModelNet40</em>, and drug-response 3D phenotypes.
-          </p>
-
-          <div class="d-figure">
-            <figure>
-              <img src="assets/figures/Intra_Interpretability_pert_new.png" alt="Interpretation results">
-              <figcaption>
-                <strong>Figure 2.</strong> PointMIL, CLAIM and PSM interpretability visualisations and corresponding perturbation curves using the Transformer backbone for example-cells from the IntrA dataset. Red points mark regions most responsible for the predicted label.
-              </figcaption>
-            </figure>
+      <div class="panel" style="margin-top:12px">
+        <div class="ctrl">
+          <div class="row"><label>Model</label>
+            <select id="glbSelect">
+              <option value="assets/models/intra_cell_redgray.glb">IntrA — Pred=1 (red/gray)</option>
+              <!-- add more GLBs here -->
+              <!-- <option value="assets/models/rbc_bleb.glb">RBC — Blebbistatin</option> -->
+            </select>
           </div>
-
-          <div class="d-figure">
-            <figure>
-              <img src="assets/figures/results_table.png" alt="Clssification results">
-              <figcaption>
-                <strong>Figure 3.</strong> Classification results on IntrA, RBC, and ModelNet40. All results are shown without a voting strategy on 1024 points. The highest results are shown in bold. Differences between backbones and POINTMIL are shown in violet. Adapted architectures without farthest point sampling results are shown with a †.
-              </figcaption>
-            </figure>
+          <div class="row"><label>Auto-rotate</label>
+            <select id="autorotSelect">
+              <option value="on">On</option><option value="off">Off</option>
+            </select>
           </div>
-
-          <div class="d-figure">
-            <figure>
-              <img src="assets/figures/noise_plane.png" alt="Robustness to noise">
-              <figcaption>
-                <strong>Figure 4.</strong> Interpretability visualisations of PointMIL on a Airplane from ModelNet40 after adding a number (shown on the heading) of noisy points. PointMIL can still focus on salient shape motifs, ignoring noise.
-              </figcaption>
-            </figure>
+          <div class="row"><label>Shadow</label>
+            <input id="shadowSlider" type="range" min="0" max="2" step="0.05" value="1.0"/>
           </div>
-
-
-          <ul class="text">
-            <li><strong>Faithful:</strong> explanations are produced by the decision mechanism itself.</li>
-            <li><strong>Granular:</strong> per-class importance enables side-by-side comparisons across hypotheses.</li>
-            <li><strong>Practical:</strong> simple thresholds produce clean, reviewer-friendly overlays for QA and error analysis.</li>
-          </ul>
+          <div class="row"><label>Exposure</label>
+            <input id="expSlider" type="range" min="0.6" max="1.6" step="0.02" value="1.05"/>
+          </div>
+          <div class="row"><label>Background</label>
+            <select id="bgHQ">
+              <option value="#ffffff">White</option>
+              <option value="#f6f7f9">Paper</option>
+              <option value="#0b0d12">Dark</option>
+            </select>
+          </div>
         </div>
-
-        <div class="subsection">
-          <h3 class="text">Usage in the Demo</h3>
-          <p class="text">
-            The web demo loads a point cloud, selects a class, and shades points by MIL importance (gray→red). Use the “High: Spheres + shadows” mode to match
-            our publication figures and rotate the scene interactively.
-          </p>
-        </div>
-      </div>
-
-      <!-- ✅ Conclusion -->
-      <div id="conclusion" class="vision-block">
-        <h1 class="text">✅ Conclusion</h1>
-        <p class="text">
-          PointMIL makes point-cloud classification <em>interpretable by design</em>, unifying common backbones with transparent MIL pooling.
-          The same mechanism that predicts the class reveals <strong>where</strong> the model looked, enabling reliable inspection, error analysis,
-          and communication in scientific and industrial settings.
-        </p>
       </div>
     </section>
-    <!-- =================== END POINTMIL SUMMARY SECTIONS =================== -->
+
 
     <!-- BIBTEX -->
     <section id="bibtex" class="section">
@@ -854,10 +632,10 @@
   }
   </script>
 
-  <!-- model-viewer for GLB -->
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+
   <script>
-    const mv = document.getElementById('pubvisViewer');
+      const mv = document.getElementById('pubvisViewer');
     const glbSelect = document.getElementById('glbSelect');
     const autorotSelect = document.getElementById('autorotSelect');
     const shadowSlider = document.getElementById('shadowSlider');
