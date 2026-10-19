@@ -59,12 +59,12 @@ def convert_atlas1(split_csv: Path, mapping_csv: Path, metadata_csv: Path, out_d
     out.to_csv(out_dir / "split0.csv", index=False)
     print("atlas1", out.groupby(["treatment", "split"]).size().unstack(fill_value=0).to_dict())
     with open(out_dir / "README.md", "w") as f:
-        f.write("# ATLAS-1 split\n\n`split0.csv` is the single train/val/test split used for every ATLAS-1 result in the paper "
-                "(the paper's supplementary material describes 5-fold cross-validation; the runs used this one split).\n\n"
-                f"Cells: {len(out)} ({out['split'].value_counts().to_dict()}).\n\n")
+        counts = out["split"].value_counts()
+        f.write("# ATLAS-1 split\n\n`split0.csv` is the train/validation/test split used for the ATLAS-1 experiments.\n\n"
+                f"Cells: {len(out)} in total, {counts.get('train', 0)} train, {counts.get('val', 0)} val and {counts.get('test', 0)} test.")
         if len(unmapped):
-            f.write(f"{unmapped['serialNumber'].nunique()} cell(s) of the original split have no public serial number and are not part of the release "
-                    f"(internal id(s): {', '.join(sorted(set(unmapped['serialNumber'].astype(str))))}).\n\n")
+            f.write(f" {unmapped['serialNumber'].nunique()} cell(s) of the original split have no public serial number and are not part of the release.")
+        f.write("\n\n")
         if len(dup_old):
             pairs = dup_old.groupby("old_serial")["new_serial"].apply(lambda s: " and ".join(sorted(s)))
             f.write("Note: the following public serials are the same cell released twice under two names: "

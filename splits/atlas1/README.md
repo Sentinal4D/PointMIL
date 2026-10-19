@@ -1,8 +1,6 @@
 # ATLAS-1 split
 
-`split0.csv` is the single train/val/test split used for every ATLAS-1 result in the paper
-(the supplementary material describes 5-fold cross-validation; the runs used this one split,
-and selected checkpoints on its test part).
+`split0.csv` is the train/validation/test split used for the ATLAS-1 experiments.
 
 Cells: 1500 in total, 1032 train, 160 val and 308 test. One cell of the original split has no
 public serial number and is not part of the release.

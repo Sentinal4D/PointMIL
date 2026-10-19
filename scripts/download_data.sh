@@ -27,19 +27,21 @@ rbc() {
 }
 
 modelnet40() {
-  echo "== ModelNet40 (2048-point HDF5 release used by PointNet++, DGCNN and PointNeXt)"
+  echo "== ModelNet40 (official 2048-point HDF5 release, modelnet40_ply_hdf5_2048, as used by PointNet++, DGCNN and PointNeXt)"
   mkdir -p "$ROOT/ModelNet40"
   zip="$ROOT/ModelNet40/modelnet40_ply_hdf5_2048.zip"
-  stanford="https://shapenet.cs.stanford.edu/media/modelnet40_ply_hdf5_2048.zip"
-  # copy of the same archive on the Hugging Face Hub, used when the Stanford server is offline
+  # copy of the official archive on the Hugging Face Hub (the release results use exactly this file)
   hub="https://huggingface.co/datasets/Msun/modelnet40/resolve/main/modelnet40_ply_hdf5_2048.zip"
-  hub_sha256="f01b8189281fae5790e39deb9f3eca86e446b771bdc665c6ad05f28d039b20e7"
+  stanford="https://shapenet.cs.stanford.edu/media/modelnet40_ply_hdf5_2048.zip"
+  sha256="f01b8189281fae5790e39deb9f3eca86e446b771bdc665c6ad05f28d039b20e7"
   if [ ! -f "$zip" ]; then
-    echo "downloading $stanford (about 435 MB)"
-    if ! curl -fL --connect-timeout 20 -o "$zip.part" "$stanford"; then
-      echo "the Stanford server did not answer; downloading the copy from the Hugging Face Hub"
-      curl -fL -o "$zip.part" "$hub"
-      echo "$hub_sha256  $zip.part" | sha256sum -c - || { echo "checksum mismatch, removing the download"; rm -f "$zip.part"; return 1; }
+    echo "downloading $hub (about 435 MB)"
+    if ! curl -fL -o "$zip.part" "$hub"; then
+      echo "the Hugging Face copy is not reachable; trying the original Stanford host"
+      curl -fL --connect-timeout 20 -o "$zip.part" "$stanford"
+    fi
+    if ! echo "$sha256  $zip.part" | sha256sum -c - >/dev/null 2>&1; then
+      echo "warning: the archive differs from the one used for the released results (SHA-256 mismatch)"
     fi
     mv "$zip.part" "$zip"
   fi
