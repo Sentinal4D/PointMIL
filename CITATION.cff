@@ -1,0 +1,68 @@
+cff-version: 1.2.0
+message: "If you use this software or the ATLAS-1 dataset, please cite the paper below."
+title: "PointMIL: Interpretable point cloud classification using multiple instance learning"
+type: software
+version: 1.0.0
+repository-code: "https://github.com/Sentinal4D/PointMIL"
+url: "https://sentinal4d.github.io/PointMIL"
+license: LicenseRef-Sentinal4D-Non-Commercial-EULA
+authors:
+  - family-names: De Vries
+    given-names: Matt
+  - family-names: Naidoo
+    given-names: Reed
+  - family-names: Fourkioti
+    given-names: Olga
+  - family-names: Dent
+    given-names: Lucas G.
+  - family-names: Curry
+    given-names: Nathan
+  - family-names: Dunsby
+    given-names: Chris
+  - family-names: Bakal
+    given-names: Chris
+preferred-citation:
+  type: conference-paper
+  title: "Interpretable point cloud classification using multiple instance learning"
+  authors:
+    - family-names: De Vries
+      given-names: Matt
+    - family-names: Naidoo
+      given-names: Reed
+    - family-names: Fourkioti
+      given-names: Olga
+    - family-names: Dent
+      given-names: Lucas G.
+    - family-names: Curry
+      given-names: Nathan
+    - family-names: Dunsby
+      given-names: Chris
+    - family-names: Bakal
+      given-names: Chris
+  collection-title: "Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)"
+  year: 2025
+  month: 10
+  start: 22209
+  end: 22220
+  url: "https://openaccess.thecvf.com/content/ICCV2025/papers/De_Vries_Interpretable_point_cloud_classification_using_multiple_instance_learning_ICCV_2025_paper.pdf"
+references:
+  - type: conference-paper
+    title: "PointNeXt: Revisiting PointNet++ with Improved Training and Scaling Strategies"
+    authors:
+      - family-names: Qian
+        given-names: Guocheng
+      - family-names: Li
+        given-names: Yuchen
+      - family-names: Peng
+        given-names: Houwen
+      - family-names: Mai
+        given-names: Jinjie
+      - family-names: Hammoud
+        given-names: Hasan
+      - family-names: Elhoseiny
+        given-names: Mohamed
+      - family-names: Ghanem
+        given-names: Bernard
+    collection-title: "Advances in Neural Information Processing Systems (NeurIPS)"
+    year: 2022
+    notes: "Training strategy and OpenPoints components used for the ATLAS-1, ScanObjectNN and PointMLPElite experiments."

@@ -205,3 +205,22 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# PointMIL: data, runs, checkpoints and logs never go into the repository
+# (anchored with a leading slash so that package folders such as pointmil/data/ are kept)
+/outputs/
+/results/
+/data/
+*.pt
+*.pth
+*.ckpt
+*.t7
+*.h5
+*.npy
+*.npz
+*.ply
+*.obj
+/wandb/
+outputs_smoke.log
+.idea/
+.vscode/
