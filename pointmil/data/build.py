@@ -75,17 +75,16 @@ def build_dataloaders(cfg: dict, fold: int | None, seed: int) -> dict[str, DataL
 
     ``val_split`` is one of:
 
-    * ``test``: model selection on the test split (the convention of the paper runs for
-      IntrA, RBC, ModelNet40 and ScanObjectNN);
-    * ``validation``: the validation rows of the split file (ATLAS-1 in the paper; for IntrA and
-      RBC the model is then trained on the ``train`` rows only, so validation rows are not seen);
+    * ``test``: model selection on the test split (the provided configs);
+    * ``validation``: the validation rows of the split file (for IntrA and RBC the model is then
+      trained on the ``train`` rows only, so validation rows are not seen);
     * ``holdout``: a stratified ``val_fraction`` of the training items is held out.
     """
     data_cfg = cfg["data"]
     val_split = cfg["train"]["val_split"]
     g = torch.Generator()
     g.manual_seed(seed)
-    # IntrA and RBC: "train" = train + validation rows of the fold file (as in the paper runs)
+    # IntrA and RBC: "train" = train + validation rows of the fold file
     train_split = "train_only" if val_split == "validation" and data_cfg["name"] in FOLD_DATASETS else "train"
     train_ds = build_dataset(data_cfg, train_split, train=True, fold=fold)
     test_ds = build_dataset(data_cfg, "test", train=False, fold=fold)

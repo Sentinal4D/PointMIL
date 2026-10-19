@@ -9,8 +9,7 @@
 * ``mesh``: the vertices of the public surface meshes ``data/<serial>.obj``.
 
 The split file (``splits/atlas1/split0.csv``: ``serial,treatment,split``) gives the labels and
-the single train/val/test split used for every ATLAS-1 number in the paper; the paper runs
-selected checkpoints on the test split.
+the train/val/test split of the ATLAS-1 experiments.
 """
 
 from __future__ import annotations

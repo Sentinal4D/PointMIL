@@ -25,4 +25,4 @@ run() { "$CONDA_TOOL" run -n "$ENV_NAME" "$@"; }
 run pip install -e ".[dev]"
 run python -c "import torch, pointmil; print('pointmil', pointmil.__version__, '| torch', torch.__version__, '| cuda available:', torch.cuda.is_available())"
 run python -m pytest tests -q --ignore=tests/equivalence || { echo "unit tests failed; see output above" >&2; exit 1; }
-echo "Installed. Activate with '$CONDA_TOOL activate $ENV_NAME' and set POINTMIL_DATA to your dataset root (see README.md, Data preparation)."
+echo "Installed. Activate with '$CONDA_TOOL activate $ENV_NAME' and set POINTMIL_DATA to your dataset root (see docs/GUIDE.md, Data)."
