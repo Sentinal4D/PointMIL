@@ -1,0 +1,1501 @@
+serial,treatment,split,plate
+Blebbistatin_Plate1_408,Blebbistatin,test,1
+Blebbistatin_Plate1_413,Blebbistatin,test,1
+Blebbistatin_Plate1_417,Blebbistatin,test,1
+Blebbistatin_Plate1_419,Blebbistatin,test,1
+Blebbistatin_Plate1_421,Blebbistatin,test,1
+Blebbistatin_Plate1_422,Blebbistatin,test,1
+Blebbistatin_Plate1_423,Blebbistatin,test,1
+Blebbistatin_Plate1_426,Blebbistatin,test,1
+Blebbistatin_Plate1_433,Blebbistatin,test,1
+Blebbistatin_Plate1_437,Blebbistatin,test,1
+Blebbistatin_Plate1_438,Blebbistatin,test,1
+Blebbistatin_Plate1_440,Blebbistatin,test,1
+Blebbistatin_Plate1_448,Blebbistatin,test,1
+Blebbistatin_Plate1_454,Blebbistatin,test,1
+Blebbistatin_Plate1_465,Blebbistatin,test,1
+Blebbistatin_Plate1_466,Blebbistatin,test,1
+Blebbistatin_Plate1_481,Blebbistatin,test,1
+Blebbistatin_Plate1_485,Blebbistatin,test,1
+Blebbistatin_Plate1_490,Blebbistatin,test,1
+Blebbistatin_Plate1_495,Blebbistatin,test,1
+Blebbistatin_Plate1_499,Blebbistatin,test,1
+Blebbistatin_Plate2_397,Blebbistatin,test,2
+Blebbistatin_Plate2_398,Blebbistatin,test,2
+Blebbistatin_Plate2_400,Blebbistatin,test,2
+Blebbistatin_Plate2_401,Blebbistatin,test,2
+Blebbistatin_Plate2_402,Blebbistatin,test,2
+Blebbistatin_Plate2_404,Blebbistatin,test,2
+Blebbistatin_Plate2_405,Blebbistatin,test,2
+Blebbistatin_Plate2_406,Blebbistatin,test,2
+Blebbistatin_Plate2_410,Blebbistatin,test,2
+Blebbistatin_Plate2_412,Blebbistatin,test,2
+Blebbistatin_Plate2_414,Blebbistatin,test,2
+Blebbistatin_Plate2_418,Blebbistatin,test,2
+Blebbistatin_Plate2_420,Blebbistatin,test,2
+Blebbistatin_Plate2_425,Blebbistatin,test,2
+Blebbistatin_Plate2_427,Blebbistatin,test,2
+Blebbistatin_Plate2_428,Blebbistatin,test,2
+Blebbistatin_Plate2_444,Blebbistatin,test,2
+Blebbistatin_Plate2_449,Blebbistatin,test,2
+Blebbistatin_Plate2_451,Blebbistatin,test,2
+Blebbistatin_Plate2_452,Blebbistatin,test,2
+Blebbistatin_Plate2_456,Blebbistatin,test,2
+Blebbistatin_Plate2_464,Blebbistatin,test,2
+Blebbistatin_Plate2_470,Blebbistatin,test,2
+Blebbistatin_Plate2_472,Blebbistatin,test,2
+Blebbistatin_Plate2_473,Blebbistatin,test,2
+Blebbistatin_Plate2_474,Blebbistatin,test,2
+Blebbistatin_Plate2_477,Blebbistatin,test,2
+Blebbistatin_Plate2_480,Blebbistatin,test,2
+Blebbistatin_Plate2_483,Blebbistatin,test,2
+Blebbistatin_Plate2_496,Blebbistatin,test,2
+Blebbistatin_Plate2_497,Blebbistatin,test,2
+Blebbistatin_Plate2_498,Blebbistatin,test,2
+Blebbistatin_Plate3_396,Blebbistatin,test,3
+Blebbistatin_Plate3_399,Blebbistatin,test,3
+Blebbistatin_Plate3_403,Blebbistatin,test,3
+Blebbistatin_Plate3_407,Blebbistatin,test,3
+Blebbistatin_Plate3_409,Blebbistatin,test,3
+Blebbistatin_Plate3_411,Blebbistatin,test,3
+Blebbistatin_Plate3_415,Blebbistatin,test,3
+Blebbistatin_Plate3_416,Blebbistatin,test,3
+Blebbistatin_Plate3_424,Blebbistatin,test,3
+Blebbistatin_Plate3_429,Blebbistatin,test,3
+Blebbistatin_Plate3_430,Blebbistatin,test,3
+Blebbistatin_Plate3_431,Blebbistatin,test,3
+Blebbistatin_Plate3_432,Blebbistatin,test,3
+Blebbistatin_Plate3_434,Blebbistatin,test,3
+Blebbistatin_Plate3_435,Blebbistatin,test,3
+Blebbistatin_Plate3_436,Blebbistatin,test,3
+Blebbistatin_Plate3_439,Blebbistatin,test,3
+Blebbistatin_Plate3_441,Blebbistatin,test,3
+Blebbistatin_Plate3_442,Blebbistatin,test,3
+Blebbistatin_Plate3_443,Blebbistatin,test,3
+Blebbistatin_Plate3_445,Blebbistatin,test,3
+Blebbistatin_Plate3_446,Blebbistatin,test,3
+Blebbistatin_Plate3_447,Blebbistatin,test,3
+Blebbistatin_Plate3_450,Blebbistatin,test,3
+Blebbistatin_Plate3_453,Blebbistatin,test,3
+Blebbistatin_Plate3_455,Blebbistatin,test,3
+Blebbistatin_Plate3_457,Blebbistatin,test,3
+Blebbistatin_Plate3_458,Blebbistatin,test,3
+Blebbistatin_Plate3_459,Blebbistatin,test,3
+Blebbistatin_Plate3_460,Blebbistatin,test,3
+Blebbistatin_Plate3_461,Blebbistatin,test,3
+Blebbistatin_Plate3_462,Blebbistatin,test,3
+Blebbistatin_Plate3_463,Blebbistatin,test,3
+Blebbistatin_Plate3_467,Blebbistatin,test,3
+Blebbistatin_Plate3_468,Blebbistatin,test,3
+Blebbistatin_Plate3_469,Blebbistatin,test,3
+Blebbistatin_Plate3_471,Blebbistatin,test,3
+Blebbistatin_Plate3_475,Blebbistatin,test,3
+Blebbistatin_Plate3_476,Blebbistatin,test,3
+Blebbistatin_Plate3_478,Blebbistatin,test,3
+Blebbistatin_Plate3_479,Blebbistatin,test,3
+Blebbistatin_Plate3_482,Blebbistatin,test,3
+Blebbistatin_Plate3_484,Blebbistatin,test,3
+Blebbistatin_Plate3_486,Blebbistatin,test,3
+Blebbistatin_Plate3_487,Blebbistatin,test,3
+Blebbistatin_Plate3_488,Blebbistatin,test,3
+Blebbistatin_Plate3_489,Blebbistatin,test,3
+Blebbistatin_Plate3_491,Blebbistatin,test,3
+Blebbistatin_Plate3_492,Blebbistatin,test,3
+Blebbistatin_Plate3_493,Blebbistatin,test,3
+Blebbistatin_Plate3_494,Blebbistatin,test,3
+No Treatment_Plate1_387,No Treatment,test,1
+No Treatment_Plate1_388,No Treatment,test,1
+No Treatment_Plate1_389,No Treatment,test,1
+No Treatment_Plate1_391,No Treatment,test,1
+No Treatment_Plate1_392,No Treatment,test,1
+No Treatment_Plate1_393,No Treatment,test,1
+No Treatment_Plate1_394,No Treatment,test,1
+No Treatment_Plate1_395,No Treatment,test,1
+No Treatment_Plate1_397,No Treatment,test,1
+No Treatment_Plate1_402,No Treatment,test,1
+No Treatment_Plate1_403,No Treatment,test,1
+No Treatment_Plate1_407,No Treatment,test,1
+No Treatment_Plate1_408,No Treatment,test,1
+No Treatment_Plate1_410,No Treatment,test,1
+No Treatment_Plate1_412,No Treatment,test,1
+No Treatment_Plate1_416,No Treatment,test,1
+No Treatment_Plate1_417,No Treatment,test,1
+No Treatment_Plate1_420,No Treatment,test,1
+No Treatment_Plate1_421,No Treatment,test,1
+No Treatment_Plate1_422,No Treatment,test,1
+No Treatment_Plate1_423,No Treatment,test,1
+No Treatment_Plate1_425,No Treatment,test,1
+No Treatment_Plate1_426,No Treatment,test,1
+No Treatment_Plate1_429,No Treatment,test,1
+No Treatment_Plate1_430,No Treatment,test,1
+No Treatment_Plate1_432,No Treatment,test,1
+No Treatment_Plate1_434,No Treatment,test,1
+No Treatment_Plate1_435,No Treatment,test,1
+No Treatment_Plate1_439,No Treatment,test,1
+No Treatment_Plate1_443,No Treatment,test,1
+No Treatment_Plate1_444,No Treatment,test,1
+No Treatment_Plate1_446,No Treatment,test,1
+No Treatment_Plate1_448,No Treatment,test,1
+No Treatment_Plate1_451,No Treatment,test,1
+No Treatment_Plate1_453,No Treatment,test,1
+No Treatment_Plate1_454,No Treatment,test,1
+No Treatment_Plate1_457,No Treatment,test,1
+No Treatment_Plate1_458,No Treatment,test,1
+No Treatment_Plate1_459,No Treatment,test,1
+No Treatment_Plate1_460,No Treatment,test,1
+No Treatment_Plate1_462,No Treatment,test,1
+No Treatment_Plate1_463,No Treatment,test,1
+No Treatment_Plate1_465,No Treatment,test,1
+No Treatment_Plate1_468,No Treatment,test,1
+No Treatment_Plate1_469,No Treatment,test,1
+No Treatment_Plate1_473,No Treatment,test,1
+No Treatment_Plate1_474,No Treatment,test,1
+No Treatment_Plate1_475,No Treatment,test,1
+No Treatment_Plate1_477,No Treatment,test,1
+No Treatment_Plate1_478,No Treatment,test,1
+No Treatment_Plate1_480,No Treatment,test,1
+No Treatment_Plate1_485,No Treatment,test,1
+No Treatment_Plate1_486,No Treatment,test,1
+No Treatment_Plate1_487,No Treatment,test,1
+No Treatment_Plate1_488,No Treatment,test,1
+No Treatment_Plate1_489,No Treatment,test,1
+No Treatment_Plate1_490,No Treatment,test,1
+No Treatment_Plate1_491,No Treatment,test,1
+No Treatment_Plate1_492,No Treatment,test,1
+No Treatment_Plate1_493,No Treatment,test,1
+No Treatment_Plate1_495,No Treatment,test,1
+No Treatment_Plate1_497,No Treatment,test,1
+No Treatment_Plate1_498,No Treatment,test,1
+No Treatment_Plate2_386,No Treatment,test,2
+No Treatment_Plate2_396,No Treatment,test,2
+No Treatment_Plate2_401,No Treatment,test,2
+No Treatment_Plate2_406,No Treatment,test,2
+No Treatment_Plate2_418,No Treatment,test,2
+No Treatment_Plate2_419,No Treatment,test,2
+No Treatment_Plate2_428,No Treatment,test,2
+No Treatment_Plate2_433,No Treatment,test,2
+No Treatment_Plate2_436,No Treatment,test,2
+No Treatment_Plate2_438,No Treatment,test,2
+No Treatment_Plate2_441,No Treatment,test,2
+No Treatment_Plate2_442,No Treatment,test,2
+No Treatment_Plate2_445,No Treatment,test,2
+No Treatment_Plate2_449,No Treatment,test,2
+No Treatment_Plate2_450,No Treatment,test,2
+No Treatment_Plate2_456,No Treatment,test,2
+No Treatment_Plate2_467,No Treatment,test,2
+No Treatment_Plate2_471,No Treatment,test,2
+No Treatment_Plate2_479,No Treatment,test,2
+No Treatment_Plate2_484,No Treatment,test,2
+No Treatment_Plate2_496,No Treatment,test,2
+No Treatment_Plate2_499,No Treatment,test,2
+No Treatment_Plate3_384,No Treatment,test,3
+No Treatment_Plate3_385,No Treatment,test,3
+No Treatment_Plate3_390,No Treatment,test,3
+No Treatment_Plate3_398,No Treatment,test,3
+No Treatment_Plate3_399,No Treatment,test,3
+No Treatment_Plate3_400,No Treatment,test,3
+No Treatment_Plate3_404,No Treatment,test,3
+No Treatment_Plate3_405,No Treatment,test,3
+No Treatment_Plate3_409,No Treatment,test,3
+No Treatment_Plate3_411,No Treatment,test,3
+No Treatment_Plate3_413,No Treatment,test,3
+No Treatment_Plate3_414,No Treatment,test,3
+No Treatment_Plate3_415,No Treatment,test,3
+No Treatment_Plate3_424,No Treatment,test,3
+No Treatment_Plate3_427,No Treatment,test,3
+No Treatment_Plate3_431,No Treatment,test,3
+No Treatment_Plate3_437,No Treatment,test,3
+No Treatment_Plate3_440,No Treatment,test,3
+No Treatment_Plate3_447,No Treatment,test,3
+No Treatment_Plate3_452,No Treatment,test,3
+No Treatment_Plate3_455,No Treatment,test,3
+No Treatment_Plate3_461,No Treatment,test,3
+No Treatment_Plate3_464,No Treatment,test,3
+No Treatment_Plate3_466,No Treatment,test,3
+No Treatment_Plate3_470,No Treatment,test,3
+No Treatment_Plate3_472,No Treatment,test,3
+No Treatment_Plate3_476,No Treatment,test,3
+No Treatment_Plate3_481,No Treatment,test,3
+No Treatment_Plate3_482,No Treatment,test,3
+No Treatment_Plate3_483,No Treatment,test,3
+No Treatment_Plate3_494,No Treatment,test,3
+Nocodazole_Plate1_414,Nocodazole,test,1
+Nocodazole_Plate1_415,Nocodazole,test,1
+Nocodazole_Plate1_416,Nocodazole,test,1
+Nocodazole_Plate1_417,Nocodazole,test,1
+Nocodazole_Plate1_418,Nocodazole,test,1
+Nocodazole_Plate1_420,Nocodazole,test,1
+Nocodazole_Plate1_421,Nocodazole,test,1
+Nocodazole_Plate1_424,Nocodazole,test,1
+Nocodazole_Plate1_426,Nocodazole,test,1
+Nocodazole_Plate1_429,Nocodazole,test,1
+Nocodazole_Plate1_431,Nocodazole,test,1
+Nocodazole_Plate1_432,Nocodazole,test,1
+Nocodazole_Plate1_434,Nocodazole,test,1
+Nocodazole_Plate1_435,Nocodazole,test,1
+Nocodazole_Plate1_437,Nocodazole,test,1
+Nocodazole_Plate1_438,Nocodazole,test,1
+Nocodazole_Plate1_439,Nocodazole,test,1
+Nocodazole_Plate1_441,Nocodazole,test,1
+Nocodazole_Plate1_444,Nocodazole,test,1
+Nocodazole_Plate1_447,Nocodazole,test,1
+Nocodazole_Plate1_448,Nocodazole,test,1
+Nocodazole_Plate1_449,Nocodazole,test,1
+Nocodazole_Plate1_451,Nocodazole,test,1
+Nocodazole_Plate1_452,Nocodazole,test,1
+Nocodazole_Plate1_455,Nocodazole,test,1
+Nocodazole_Plate1_456,Nocodazole,test,1
+Nocodazole_Plate1_458,Nocodazole,test,1
+Nocodazole_Plate1_459,Nocodazole,test,1
+Nocodazole_Plate1_464,Nocodazole,test,1
+Nocodazole_Plate1_465,Nocodazole,test,1
+Nocodazole_Plate1_468,Nocodazole,test,1
+Nocodazole_Plate1_469,Nocodazole,test,1
+Nocodazole_Plate1_470,Nocodazole,test,1
+Nocodazole_Plate1_472,Nocodazole,test,1
+Nocodazole_Plate1_475,Nocodazole,test,1
+Nocodazole_Plate1_477,Nocodazole,test,1
+Nocodazole_Plate1_478,Nocodazole,test,1
+Nocodazole_Plate1_479,Nocodazole,test,1
+Nocodazole_Plate1_480,Nocodazole,test,1
+Nocodazole_Plate1_482,Nocodazole,test,1
+Nocodazole_Plate1_483,Nocodazole,test,1
+Nocodazole_Plate1_484,Nocodazole,test,1
+Nocodazole_Plate1_487,Nocodazole,test,1
+Nocodazole_Plate1_489,Nocodazole,test,1
+Nocodazole_Plate1_495,Nocodazole,test,1
+Nocodazole_Plate1_496,Nocodazole,test,1
+Nocodazole_Plate1_497,Nocodazole,test,1
+Nocodazole_Plate1_498,Nocodazole,test,1
+Nocodazole_Plate1_499,Nocodazole,test,1
+Nocodazole_Plate2_423,Nocodazole,test,2
+Nocodazole_Plate2_425,Nocodazole,test,2
+Nocodazole_Plate2_427,Nocodazole,test,2
+Nocodazole_Plate2_436,Nocodazole,test,2
+Nocodazole_Plate2_445,Nocodazole,test,2
+Nocodazole_Plate2_457,Nocodazole,test,2
+Nocodazole_Plate2_463,Nocodazole,test,2
+Nocodazole_Plate2_467,Nocodazole,test,2
+Nocodazole_Plate2_474,Nocodazole,test,2
+Nocodazole_Plate3_412,Nocodazole,test,3
+Nocodazole_Plate3_413,Nocodazole,test,3
+Nocodazole_Plate3_419,Nocodazole,test,3
+Nocodazole_Plate3_422,Nocodazole,test,3
+Nocodazole_Plate3_428,Nocodazole,test,3
+Nocodazole_Plate3_430,Nocodazole,test,3
+Nocodazole_Plate3_433,Nocodazole,test,3
+Nocodazole_Plate3_440,Nocodazole,test,3
+Nocodazole_Plate3_442,Nocodazole,test,3
+Nocodazole_Plate3_443,Nocodazole,test,3
+Nocodazole_Plate3_446,Nocodazole,test,3
+Nocodazole_Plate3_450,Nocodazole,test,3
+Nocodazole_Plate3_453,Nocodazole,test,3
+Nocodazole_Plate3_454,Nocodazole,test,3
+Nocodazole_Plate3_460,Nocodazole,test,3
+Nocodazole_Plate3_461,Nocodazole,test,3
+Nocodazole_Plate3_462,Nocodazole,test,3
+Nocodazole_Plate3_466,Nocodazole,test,3
+Nocodazole_Plate3_471,Nocodazole,test,3
+Nocodazole_Plate3_473,Nocodazole,test,3
+Nocodazole_Plate3_476,Nocodazole,test,3
+Nocodazole_Plate3_481,Nocodazole,test,3
+Nocodazole_Plate3_485,Nocodazole,test,3
+Nocodazole_Plate3_486,Nocodazole,test,3
+Nocodazole_Plate3_488,Nocodazole,test,3
+Nocodazole_Plate3_490,Nocodazole,test,3
+Nocodazole_Plate3_491,Nocodazole,test,3
+Nocodazole_Plate3_492,Nocodazole,test,3
+Nocodazole_Plate3_493,Nocodazole,test,3
+Nocodazole_Plate3_494,Nocodazole,test,3
+Blebbistatin_Plate1_001,Blebbistatin,train,1
+Blebbistatin_Plate1_005,Blebbistatin,train,1
+Blebbistatin_Plate1_007,Blebbistatin,train,1
+Blebbistatin_Plate1_010,Blebbistatin,train,1
+Blebbistatin_Plate1_012,Blebbistatin,train,1
+Blebbistatin_Plate1_017,Blebbistatin,train,1
+Blebbistatin_Plate1_022,Blebbistatin,train,1
+Blebbistatin_Plate1_024,Blebbistatin,train,1
+Blebbistatin_Plate1_025,Blebbistatin,train,1
+Blebbistatin_Plate1_029,Blebbistatin,train,1
+Blebbistatin_Plate1_030,Blebbistatin,train,1
+Blebbistatin_Plate1_031,Blebbistatin,train,1
+Blebbistatin_Plate1_040,Blebbistatin,train,1
+Blebbistatin_Plate1_041,Blebbistatin,train,1
+Blebbistatin_Plate1_042,Blebbistatin,train,1
+Blebbistatin_Plate1_043,Blebbistatin,train,1
+Blebbistatin_Plate1_044,Blebbistatin,train,1
+Blebbistatin_Plate1_046,Blebbistatin,train,1
+Blebbistatin_Plate1_048,Blebbistatin,train,1
+Blebbistatin_Plate1_049,Blebbistatin,train,1
+Blebbistatin_Plate1_050,Blebbistatin,train,1
+Blebbistatin_Plate1_052,Blebbistatin,train,1
+Blebbistatin_Plate1_055,Blebbistatin,train,1
+Blebbistatin_Plate1_059,Blebbistatin,train,1
+Blebbistatin_Plate1_070,Blebbistatin,train,1
+Blebbistatin_Plate1_076,Blebbistatin,train,1
+Blebbistatin_Plate1_088,Blebbistatin,train,1
+Blebbistatin_Plate1_089,Blebbistatin,train,1
+Blebbistatin_Plate1_095,Blebbistatin,train,1
+Blebbistatin_Plate1_097,Blebbistatin,train,1
+Blebbistatin_Plate1_100,Blebbistatin,train,1
+Blebbistatin_Plate1_107,Blebbistatin,train,1
+Blebbistatin_Plate1_109,Blebbistatin,train,1
+Blebbistatin_Plate1_115,Blebbistatin,train,1
+Blebbistatin_Plate1_118,Blebbistatin,train,1
+Blebbistatin_Plate1_119,Blebbistatin,train,1
+Blebbistatin_Plate1_120,Blebbistatin,train,1
+Blebbistatin_Plate1_121,Blebbistatin,train,1
+Blebbistatin_Plate1_131,Blebbistatin,train,1
+Blebbistatin_Plate1_134,Blebbistatin,train,1
+Blebbistatin_Plate1_141,Blebbistatin,train,1
+Blebbistatin_Plate1_145,Blebbistatin,train,1
+Blebbistatin_Plate1_146,Blebbistatin,train,1
+Blebbistatin_Plate1_148,Blebbistatin,train,1
+Blebbistatin_Plate1_150,Blebbistatin,train,1
+Blebbistatin_Plate1_152,Blebbistatin,train,1
+Blebbistatin_Plate1_154,Blebbistatin,train,1
+Blebbistatin_Plate1_162,Blebbistatin,train,1
+Blebbistatin_Plate1_165,Blebbistatin,train,1
+Blebbistatin_Plate1_166,Blebbistatin,train,1
+Blebbistatin_Plate1_169,Blebbistatin,train,1
+Blebbistatin_Plate1_170,Blebbistatin,train,1
+Blebbistatin_Plate1_173,Blebbistatin,train,1
+Blebbistatin_Plate1_174,Blebbistatin,train,1
+Blebbistatin_Plate1_177,Blebbistatin,train,1
+Blebbistatin_Plate1_182,Blebbistatin,train,1
+Blebbistatin_Plate1_184,Blebbistatin,train,1
+Blebbistatin_Plate1_193,Blebbistatin,train,1
+Blebbistatin_Plate1_194,Blebbistatin,train,1
+Blebbistatin_Plate1_196,Blebbistatin,train,1
+Blebbistatin_Plate1_199,Blebbistatin,train,1
+Blebbistatin_Plate1_201,Blebbistatin,train,1
+Blebbistatin_Plate1_203,Blebbistatin,train,1
+Blebbistatin_Plate1_204,Blebbistatin,train,1
+Blebbistatin_Plate1_206,Blebbistatin,train,1
+Blebbistatin_Plate1_209,Blebbistatin,train,1
+Blebbistatin_Plate1_211,Blebbistatin,train,1
+Blebbistatin_Plate1_212,Blebbistatin,train,1
+Blebbistatin_Plate1_214,Blebbistatin,train,1
+Blebbistatin_Plate1_218,Blebbistatin,train,1
+Blebbistatin_Plate1_219,Blebbistatin,train,1
+Blebbistatin_Plate1_221,Blebbistatin,train,1
+Blebbistatin_Plate1_222,Blebbistatin,train,1
+Blebbistatin_Plate1_223,Blebbistatin,train,1
+Blebbistatin_Plate1_225,Blebbistatin,train,1
+Blebbistatin_Plate1_230,Blebbistatin,train,1
+Blebbistatin_Plate1_234,Blebbistatin,train,1
+Blebbistatin_Plate1_236,Blebbistatin,train,1
+Blebbistatin_Plate1_237,Blebbistatin,train,1
+Blebbistatin_Plate1_239,Blebbistatin,train,1
+Blebbistatin_Plate1_240,Blebbistatin,train,1
+Blebbistatin_Plate1_241,Blebbistatin,train,1
+Blebbistatin_Plate1_243,Blebbistatin,train,1
+Blebbistatin_Plate1_248,Blebbistatin,train,1
+Blebbistatin_Plate1_251,Blebbistatin,train,1
+Blebbistatin_Plate1_252,Blebbistatin,train,1
+Blebbistatin_Plate1_260,Blebbistatin,train,1
+Blebbistatin_Plate1_261,Blebbistatin,train,1
+Blebbistatin_Plate1_264,Blebbistatin,train,1
+Blebbistatin_Plate1_266,Blebbistatin,train,1
+Blebbistatin_Plate1_270,Blebbistatin,train,1
+Blebbistatin_Plate1_278,Blebbistatin,train,1
+Blebbistatin_Plate1_279,Blebbistatin,train,1
+Blebbistatin_Plate1_287,Blebbistatin,train,1
+Blebbistatin_Plate1_291,Blebbistatin,train,1
+Blebbistatin_Plate1_296,Blebbistatin,train,1
+Blebbistatin_Plate1_298,Blebbistatin,train,1
+Blebbistatin_Plate1_299,Blebbistatin,train,1
+Blebbistatin_Plate1_300,Blebbistatin,train,1
+Blebbistatin_Plate1_304,Blebbistatin,train,1
+Blebbistatin_Plate1_307,Blebbistatin,train,1
+Blebbistatin_Plate1_309,Blebbistatin,train,1
+Blebbistatin_Plate1_313,Blebbistatin,train,1
+Blebbistatin_Plate1_316,Blebbistatin,train,1
+Blebbistatin_Plate1_318,Blebbistatin,train,1
+Blebbistatin_Plate1_320,Blebbistatin,train,1
+Blebbistatin_Plate1_321,Blebbistatin,train,1
+Blebbistatin_Plate1_329,Blebbistatin,train,1
+Blebbistatin_Plate1_331,Blebbistatin,train,1
+Blebbistatin_Plate1_335,Blebbistatin,train,1
+Blebbistatin_Plate1_339,Blebbistatin,train,1
+Blebbistatin_Plate1_340,Blebbistatin,train,1
+Blebbistatin_Plate1_342,Blebbistatin,train,1
+Blebbistatin_Plate2_000,Blebbistatin,train,2
+Blebbistatin_Plate2_006,Blebbistatin,train,2
+Blebbistatin_Plate2_009,Blebbistatin,train,2
+Blebbistatin_Plate2_013,Blebbistatin,train,2
+Blebbistatin_Plate2_014,Blebbistatin,train,2
+Blebbistatin_Plate2_015,Blebbistatin,train,2
+Blebbistatin_Plate2_016,Blebbistatin,train,2
+Blebbistatin_Plate2_020,Blebbistatin,train,2
+Blebbistatin_Plate2_027,Blebbistatin,train,2
+Blebbistatin_Plate2_032,Blebbistatin,train,2
+Blebbistatin_Plate2_034,Blebbistatin,train,2
+Blebbistatin_Plate2_039,Blebbistatin,train,2
+Blebbistatin_Plate2_045,Blebbistatin,train,2
+Blebbistatin_Plate2_047,Blebbistatin,train,2
+Blebbistatin_Plate2_056,Blebbistatin,train,2
+Blebbistatin_Plate2_058,Blebbistatin,train,2
+Blebbistatin_Plate2_060,Blebbistatin,train,2
+Blebbistatin_Plate2_061,Blebbistatin,train,2
+Blebbistatin_Plate2_064,Blebbistatin,train,2
+Blebbistatin_Plate2_069,Blebbistatin,train,2
+Blebbistatin_Plate2_072,Blebbistatin,train,2
+Blebbistatin_Plate2_075,Blebbistatin,train,2
+Blebbistatin_Plate2_080,Blebbistatin,train,2
+Blebbistatin_Plate2_082,Blebbistatin,train,2
+Blebbistatin_Plate2_083,Blebbistatin,train,2
+Blebbistatin_Plate2_084,Blebbistatin,train,2
+Blebbistatin_Plate2_085,Blebbistatin,train,2
+Blebbistatin_Plate2_087,Blebbistatin,train,2
+Blebbistatin_Plate2_094,Blebbistatin,train,2
+Blebbistatin_Plate2_112,Blebbistatin,train,2
+Blebbistatin_Plate2_114,Blebbistatin,train,2
+Blebbistatin_Plate2_126,Blebbistatin,train,2
+Blebbistatin_Plate2_127,Blebbistatin,train,2
+Blebbistatin_Plate2_128,Blebbistatin,train,2
+Blebbistatin_Plate2_130,Blebbistatin,train,2
+Blebbistatin_Plate2_132,Blebbistatin,train,2
+Blebbistatin_Plate2_136,Blebbistatin,train,2
+Blebbistatin_Plate2_138,Blebbistatin,train,2
+Blebbistatin_Plate2_140,Blebbistatin,train,2
+Blebbistatin_Plate2_142,Blebbistatin,train,2
+Blebbistatin_Plate2_156,Blebbistatin,train,2
+Blebbistatin_Plate2_158,Blebbistatin,train,2
+Blebbistatin_Plate2_159,Blebbistatin,train,2
+Blebbistatin_Plate2_163,Blebbistatin,train,2
+Blebbistatin_Plate2_167,Blebbistatin,train,2
+Blebbistatin_Plate2_168,Blebbistatin,train,2
+Blebbistatin_Plate2_171,Blebbistatin,train,2
+Blebbistatin_Plate2_179,Blebbistatin,train,2
+Blebbistatin_Plate2_180,Blebbistatin,train,2
+Blebbistatin_Plate2_181,Blebbistatin,train,2
+Blebbistatin_Plate2_188,Blebbistatin,train,2
+Blebbistatin_Plate2_197,Blebbistatin,train,2
+Blebbistatin_Plate2_205,Blebbistatin,train,2
+Blebbistatin_Plate2_207,Blebbistatin,train,2
+Blebbistatin_Plate2_217,Blebbistatin,train,2
+Blebbistatin_Plate2_227,Blebbistatin,train,2
+Blebbistatin_Plate2_238,Blebbistatin,train,2
+Blebbistatin_Plate2_253,Blebbistatin,train,2
+Blebbistatin_Plate2_255,Blebbistatin,train,2
+Blebbistatin_Plate2_258,Blebbistatin,train,2
+Blebbistatin_Plate2_259,Blebbistatin,train,2
+Blebbistatin_Plate2_263,Blebbistatin,train,2
+Blebbistatin_Plate2_265,Blebbistatin,train,2
+Blebbistatin_Plate2_267,Blebbistatin,train,2
+Blebbistatin_Plate2_269,Blebbistatin,train,2
+Blebbistatin_Plate2_271,Blebbistatin,train,2
+Blebbistatin_Plate2_272,Blebbistatin,train,2
+Blebbistatin_Plate2_273,Blebbistatin,train,2
+Blebbistatin_Plate2_275,Blebbistatin,train,2
+Blebbistatin_Plate2_282,Blebbistatin,train,2
+Blebbistatin_Plate2_284,Blebbistatin,train,2
+Blebbistatin_Plate2_285,Blebbistatin,train,2
+Blebbistatin_Plate2_286,Blebbistatin,train,2
+Blebbistatin_Plate2_293,Blebbistatin,train,2
+Blebbistatin_Plate2_294,Blebbistatin,train,2
+Blebbistatin_Plate2_295,Blebbistatin,train,2
+Blebbistatin_Plate2_301,Blebbistatin,train,2
+Blebbistatin_Plate2_305,Blebbistatin,train,2
+Blebbistatin_Plate2_306,Blebbistatin,train,2
+Blebbistatin_Plate2_311,Blebbistatin,train,2
+Blebbistatin_Plate2_314,Blebbistatin,train,2
+Blebbistatin_Plate2_315,Blebbistatin,train,2
+Blebbistatin_Plate2_317,Blebbistatin,train,2
+Blebbistatin_Plate2_322,Blebbistatin,train,2
+Blebbistatin_Plate2_326,Blebbistatin,train,2
+Blebbistatin_Plate2_327,Blebbistatin,train,2
+Blebbistatin_Plate2_328,Blebbistatin,train,2
+Blebbistatin_Plate2_332,Blebbistatin,train,2
+Blebbistatin_Plate2_333,Blebbistatin,train,2
+Blebbistatin_Plate2_337,Blebbistatin,train,2
+Blebbistatin_Plate3_002,Blebbistatin,train,3
+Blebbistatin_Plate3_003,Blebbistatin,train,3
+Blebbistatin_Plate3_004,Blebbistatin,train,3
+Blebbistatin_Plate3_008,Blebbistatin,train,3
+Blebbistatin_Plate3_011,Blebbistatin,train,3
+Blebbistatin_Plate3_018,Blebbistatin,train,3
+Blebbistatin_Plate3_019,Blebbistatin,train,3
+Blebbistatin_Plate3_021,Blebbistatin,train,3
+Blebbistatin_Plate3_023,Blebbistatin,train,3
+Blebbistatin_Plate3_026,Blebbistatin,train,3
+Blebbistatin_Plate3_028,Blebbistatin,train,3
+Blebbistatin_Plate3_033,Blebbistatin,train,3
+Blebbistatin_Plate3_035,Blebbistatin,train,3
+Blebbistatin_Plate3_036,Blebbistatin,train,3
+Blebbistatin_Plate3_037,Blebbistatin,train,3
+Blebbistatin_Plate3_038,Blebbistatin,train,3
+Blebbistatin_Plate3_051,Blebbistatin,train,3
+Blebbistatin_Plate3_053,Blebbistatin,train,3
+Blebbistatin_Plate3_054,Blebbistatin,train,3
+Blebbistatin_Plate3_057,Blebbistatin,train,3
+Blebbistatin_Plate3_062,Blebbistatin,train,3
+Blebbistatin_Plate3_063,Blebbistatin,train,3
+Blebbistatin_Plate3_065,Blebbistatin,train,3
+Blebbistatin_Plate3_066,Blebbistatin,train,3
+Blebbistatin_Plate3_067,Blebbistatin,train,3
+Blebbistatin_Plate3_068,Blebbistatin,train,3
+Blebbistatin_Plate3_071,Blebbistatin,train,3
+Blebbistatin_Plate3_073,Blebbistatin,train,3
+Blebbistatin_Plate3_074,Blebbistatin,train,3
+Blebbistatin_Plate3_077,Blebbistatin,train,3
+Blebbistatin_Plate3_078,Blebbistatin,train,3
+Blebbistatin_Plate3_079,Blebbistatin,train,3
+Blebbistatin_Plate3_081,Blebbistatin,train,3
+Blebbistatin_Plate3_086,Blebbistatin,train,3
+Blebbistatin_Plate3_090,Blebbistatin,train,3
+Blebbistatin_Plate3_091,Blebbistatin,train,3
+Blebbistatin_Plate3_092,Blebbistatin,train,3
+Blebbistatin_Plate3_093,Blebbistatin,train,3
+Blebbistatin_Plate3_096,Blebbistatin,train,3
+Blebbistatin_Plate3_098,Blebbistatin,train,3
+Blebbistatin_Plate3_099,Blebbistatin,train,3
+Blebbistatin_Plate3_101,Blebbistatin,train,3
+Blebbistatin_Plate3_102,Blebbistatin,train,3
+Blebbistatin_Plate3_103,Blebbistatin,train,3
+Blebbistatin_Plate3_104,Blebbistatin,train,3
+Blebbistatin_Plate3_105,Blebbistatin,train,3
+Blebbistatin_Plate3_106,Blebbistatin,train,3
+Blebbistatin_Plate3_108,Blebbistatin,train,3
+Blebbistatin_Plate3_110,Blebbistatin,train,3
+Blebbistatin_Plate3_111,Blebbistatin,train,3
+Blebbistatin_Plate3_113,Blebbistatin,train,3
+Blebbistatin_Plate3_116,Blebbistatin,train,3
+Blebbistatin_Plate3_117,Blebbistatin,train,3
+Blebbistatin_Plate3_122,Blebbistatin,train,3
+Blebbistatin_Plate3_123,Blebbistatin,train,3
+Blebbistatin_Plate3_124,Blebbistatin,train,3
+Blebbistatin_Plate3_125,Blebbistatin,train,3
+Blebbistatin_Plate3_129,Blebbistatin,train,3
+Blebbistatin_Plate3_133,Blebbistatin,train,3
+Blebbistatin_Plate3_135,Blebbistatin,train,3
+Blebbistatin_Plate3_137,Blebbistatin,train,3
+Blebbistatin_Plate3_139,Blebbistatin,train,3
+Blebbistatin_Plate3_143,Blebbistatin,train,3
+Blebbistatin_Plate3_144,Blebbistatin,train,3
+Blebbistatin_Plate3_147,Blebbistatin,train,3
+Blebbistatin_Plate3_149,Blebbistatin,train,3
+Blebbistatin_Plate3_151,Blebbistatin,train,3
+Blebbistatin_Plate3_153,Blebbistatin,train,3
+Blebbistatin_Plate3_155,Blebbistatin,train,3
+Blebbistatin_Plate3_157,Blebbistatin,train,3
+Blebbistatin_Plate3_160,Blebbistatin,train,3
+Blebbistatin_Plate3_161,Blebbistatin,train,3
+Blebbistatin_Plate3_164,Blebbistatin,train,3
+Blebbistatin_Plate3_172,Blebbistatin,train,3
+Blebbistatin_Plate3_175,Blebbistatin,train,3
+Blebbistatin_Plate3_176,Blebbistatin,train,3
+Blebbistatin_Plate3_178,Blebbistatin,train,3
+Blebbistatin_Plate3_183,Blebbistatin,train,3
+Blebbistatin_Plate3_185,Blebbistatin,train,3
+Blebbistatin_Plate3_186,Blebbistatin,train,3
+Blebbistatin_Plate3_187,Blebbistatin,train,3
+Blebbistatin_Plate3_189,Blebbistatin,train,3
+Blebbistatin_Plate3_190,Blebbistatin,train,3
+Blebbistatin_Plate3_191,Blebbistatin,train,3
+Blebbistatin_Plate3_192,Blebbistatin,train,3
+Blebbistatin_Plate3_195,Blebbistatin,train,3
+Blebbistatin_Plate3_198,Blebbistatin,train,3
+Blebbistatin_Plate3_200,Blebbistatin,train,3
+Blebbistatin_Plate3_202,Blebbistatin,train,3
+Blebbistatin_Plate3_208,Blebbistatin,train,3
+Blebbistatin_Plate3_210,Blebbistatin,train,3
+Blebbistatin_Plate3_213,Blebbistatin,train,3
+Blebbistatin_Plate3_215,Blebbistatin,train,3
+Blebbistatin_Plate3_216,Blebbistatin,train,3
+Blebbistatin_Plate3_220,Blebbistatin,train,3
+Blebbistatin_Plate3_224,Blebbistatin,train,3
+Blebbistatin_Plate3_226,Blebbistatin,train,3
+Blebbistatin_Plate3_228,Blebbistatin,train,3
+Blebbistatin_Plate3_229,Blebbistatin,train,3
+Blebbistatin_Plate3_231,Blebbistatin,train,3
+Blebbistatin_Plate3_232,Blebbistatin,train,3
+Blebbistatin_Plate3_233,Blebbistatin,train,3
+Blebbistatin_Plate3_235,Blebbistatin,train,3
+Blebbistatin_Plate3_242,Blebbistatin,train,3
+Blebbistatin_Plate3_244,Blebbistatin,train,3
+Blebbistatin_Plate3_245,Blebbistatin,train,3
+Blebbistatin_Plate3_246,Blebbistatin,train,3
+Blebbistatin_Plate3_247,Blebbistatin,train,3
+Blebbistatin_Plate3_249,Blebbistatin,train,3
+Blebbistatin_Plate3_250,Blebbistatin,train,3
+Blebbistatin_Plate3_254,Blebbistatin,train,3
+Blebbistatin_Plate3_256,Blebbistatin,train,3
+Blebbistatin_Plate3_257,Blebbistatin,train,3
+Blebbistatin_Plate3_262,Blebbistatin,train,3
+Blebbistatin_Plate3_268,Blebbistatin,train,3
+Blebbistatin_Plate3_274,Blebbistatin,train,3
+Blebbistatin_Plate3_276,Blebbistatin,train,3
+Blebbistatin_Plate3_277,Blebbistatin,train,3
+Blebbistatin_Plate3_280,Blebbistatin,train,3
+Blebbistatin_Plate3_281,Blebbistatin,train,3
+Blebbistatin_Plate3_283,Blebbistatin,train,3
+Blebbistatin_Plate3_288,Blebbistatin,train,3
+Blebbistatin_Plate3_289,Blebbistatin,train,3
+Blebbistatin_Plate3_290,Blebbistatin,train,3
+Blebbistatin_Plate3_292,Blebbistatin,train,3
+Blebbistatin_Plate3_297,Blebbistatin,train,3
+Blebbistatin_Plate3_302,Blebbistatin,train,3
+Blebbistatin_Plate3_303,Blebbistatin,train,3
+Blebbistatin_Plate3_308,Blebbistatin,train,3
+Blebbistatin_Plate3_310,Blebbistatin,train,3
+Blebbistatin_Plate3_312,Blebbistatin,train,3
+Blebbistatin_Plate3_319,Blebbistatin,train,3
+Blebbistatin_Plate3_323,Blebbistatin,train,3
+Blebbistatin_Plate3_324,Blebbistatin,train,3
+Blebbistatin_Plate3_325,Blebbistatin,train,3
+Blebbistatin_Plate3_330,Blebbistatin,train,3
+Blebbistatin_Plate3_334,Blebbistatin,train,3
+Blebbistatin_Plate3_336,Blebbistatin,train,3
+Blebbistatin_Plate3_338,Blebbistatin,train,3
+Blebbistatin_Plate3_341,Blebbistatin,train,3
+No Treatment_Plate1_000,No Treatment,train,1
+No Treatment_Plate1_002,No Treatment,train,1
+No Treatment_Plate1_004,No Treatment,train,1
+No Treatment_Plate1_006,No Treatment,train,1
+No Treatment_Plate1_007,No Treatment,train,1
+No Treatment_Plate1_011,No Treatment,train,1
+No Treatment_Plate1_012,No Treatment,train,1
+No Treatment_Plate1_014,No Treatment,train,1
+No Treatment_Plate1_015,No Treatment,train,1
+No Treatment_Plate1_016,No Treatment,train,1
+No Treatment_Plate1_021,No Treatment,train,1
+No Treatment_Plate1_023,No Treatment,train,1
+No Treatment_Plate1_025,No Treatment,train,1
+No Treatment_Plate1_026,No Treatment,train,1
+No Treatment_Plate1_031,No Treatment,train,1
+No Treatment_Plate1_033,No Treatment,train,1
+No Treatment_Plate1_035,No Treatment,train,1
+No Treatment_Plate1_038,No Treatment,train,1
+No Treatment_Plate1_041,No Treatment,train,1
+No Treatment_Plate1_043,No Treatment,train,1
+No Treatment_Plate1_050,No Treatment,train,1
+No Treatment_Plate1_052,No Treatment,train,1
+No Treatment_Plate1_054,No Treatment,train,1
+No Treatment_Plate1_055,No Treatment,train,1
+No Treatment_Plate1_056,No Treatment,train,1
+No Treatment_Plate1_058,No Treatment,train,1
+No Treatment_Plate1_064,No Treatment,train,1
+No Treatment_Plate1_067,No Treatment,train,1
+No Treatment_Plate1_068,No Treatment,train,1
+No Treatment_Plate1_070,No Treatment,train,1
+No Treatment_Plate1_074,No Treatment,train,1
+No Treatment_Plate1_075,No Treatment,train,1
+No Treatment_Plate1_076,No Treatment,train,1
+No Treatment_Plate1_082,No Treatment,train,1
+No Treatment_Plate1_083,No Treatment,train,1
+No Treatment_Plate1_084,No Treatment,train,1
+No Treatment_Plate1_085,No Treatment,train,1
+No Treatment_Plate1_087,No Treatment,train,1
+No Treatment_Plate1_089,No Treatment,train,1
+No Treatment_Plate1_092,No Treatment,train,1
+No Treatment_Plate1_094,No Treatment,train,1
+No Treatment_Plate1_096,No Treatment,train,1
+No Treatment_Plate1_097,No Treatment,train,1
+No Treatment_Plate1_098,No Treatment,train,1
+No Treatment_Plate1_099,No Treatment,train,1
+No Treatment_Plate1_100,No Treatment,train,1
+No Treatment_Plate1_101,No Treatment,train,1
+No Treatment_Plate1_102,No Treatment,train,1
+No Treatment_Plate1_109,No Treatment,train,1
+No Treatment_Plate1_110,No Treatment,train,1
+No Treatment_Plate1_111,No Treatment,train,1
+No Treatment_Plate1_113,No Treatment,train,1
+No Treatment_Plate1_114,No Treatment,train,1
+No Treatment_Plate1_115,No Treatment,train,1
+No Treatment_Plate1_116,No Treatment,train,1
+No Treatment_Plate1_121,No Treatment,train,1
+No Treatment_Plate1_122,No Treatment,train,1
+No Treatment_Plate1_123,No Treatment,train,1
+No Treatment_Plate1_125,No Treatment,train,1
+No Treatment_Plate1_127,No Treatment,train,1
+No Treatment_Plate1_128,No Treatment,train,1
+No Treatment_Plate1_129,No Treatment,train,1
+No Treatment_Plate1_131,No Treatment,train,1
+No Treatment_Plate1_132,No Treatment,train,1
+No Treatment_Plate1_133,No Treatment,train,1
+No Treatment_Plate1_134,No Treatment,train,1
+No Treatment_Plate1_139,No Treatment,train,1
+No Treatment_Plate1_141,No Treatment,train,1
+No Treatment_Plate1_142,No Treatment,train,1
+No Treatment_Plate1_143,No Treatment,train,1
+No Treatment_Plate1_144,No Treatment,train,1
+No Treatment_Plate1_145,No Treatment,train,1
+No Treatment_Plate1_147,No Treatment,train,1
+No Treatment_Plate1_149,No Treatment,train,1
+No Treatment_Plate1_152,No Treatment,train,1
+No Treatment_Plate1_153,No Treatment,train,1
+No Treatment_Plate1_154,No Treatment,train,1
+No Treatment_Plate1_156,No Treatment,train,1
+No Treatment_Plate1_162,No Treatment,train,1
+No Treatment_Plate1_163,No Treatment,train,1
+No Treatment_Plate1_167,No Treatment,train,1
+No Treatment_Plate1_169,No Treatment,train,1
+No Treatment_Plate1_170,No Treatment,train,1
+No Treatment_Plate1_171,No Treatment,train,1
+No Treatment_Plate1_172,No Treatment,train,1
+No Treatment_Plate1_175,No Treatment,train,1
+No Treatment_Plate1_177,No Treatment,train,1
+No Treatment_Plate1_178,No Treatment,train,1
+No Treatment_Plate1_180,No Treatment,train,1
+No Treatment_Plate1_182,No Treatment,train,1
+No Treatment_Plate1_185,No Treatment,train,1
+No Treatment_Plate1_187,No Treatment,train,1
+No Treatment_Plate1_188,No Treatment,train,1
+No Treatment_Plate1_189,No Treatment,train,1
+No Treatment_Plate1_190,No Treatment,train,1
+No Treatment_Plate1_192,No Treatment,train,1
+No Treatment_Plate1_194,No Treatment,train,1
+No Treatment_Plate1_200,No Treatment,train,1
+No Treatment_Plate1_206,No Treatment,train,1
+No Treatment_Plate1_207,No Treatment,train,1
+No Treatment_Plate1_208,No Treatment,train,1
+No Treatment_Plate1_209,No Treatment,train,1
+No Treatment_Plate1_211,No Treatment,train,1
+No Treatment_Plate1_212,No Treatment,train,1
+No Treatment_Plate1_215,No Treatment,train,1
+No Treatment_Plate1_216,No Treatment,train,1
+No Treatment_Plate1_219,No Treatment,train,1
+No Treatment_Plate1_220,No Treatment,train,1
+No Treatment_Plate1_221,No Treatment,train,1
+No Treatment_Plate1_222,No Treatment,train,1
+No Treatment_Plate1_224,No Treatment,train,1
+No Treatment_Plate1_226,No Treatment,train,1
+No Treatment_Plate1_228,No Treatment,train,1
+No Treatment_Plate1_231,No Treatment,train,1
+No Treatment_Plate1_232,No Treatment,train,1
+No Treatment_Plate1_233,No Treatment,train,1
+No Treatment_Plate1_239,No Treatment,train,1
+No Treatment_Plate1_245,No Treatment,train,1
+No Treatment_Plate1_246,No Treatment,train,1
+No Treatment_Plate1_247,No Treatment,train,1
+No Treatment_Plate1_252,No Treatment,train,1
+No Treatment_Plate1_253,No Treatment,train,1
+No Treatment_Plate1_254,No Treatment,train,1
+No Treatment_Plate1_255,No Treatment,train,1
+No Treatment_Plate1_256,No Treatment,train,1
+No Treatment_Plate1_263,No Treatment,train,1
+No Treatment_Plate1_266,No Treatment,train,1
+No Treatment_Plate1_272,No Treatment,train,1
+No Treatment_Plate1_273,No Treatment,train,1
+No Treatment_Plate1_277,No Treatment,train,1
+No Treatment_Plate1_278,No Treatment,train,1
+No Treatment_Plate1_279,No Treatment,train,1
+No Treatment_Plate1_284,No Treatment,train,1
+No Treatment_Plate1_289,No Treatment,train,1
+No Treatment_Plate1_291,No Treatment,train,1
+No Treatment_Plate1_293,No Treatment,train,1
+No Treatment_Plate1_294,No Treatment,train,1
+No Treatment_Plate1_298,No Treatment,train,1
+No Treatment_Plate1_299,No Treatment,train,1
+No Treatment_Plate1_300,No Treatment,train,1
+No Treatment_Plate1_302,No Treatment,train,1
+No Treatment_Plate1_305,No Treatment,train,1
+No Treatment_Plate1_306,No Treatment,train,1
+No Treatment_Plate1_308,No Treatment,train,1
+No Treatment_Plate1_315,No Treatment,train,1
+No Treatment_Plate1_316,No Treatment,train,1
+No Treatment_Plate1_317,No Treatment,train,1
+No Treatment_Plate1_318,No Treatment,train,1
+No Treatment_Plate1_322,No Treatment,train,1
+No Treatment_Plate1_323,No Treatment,train,1
+No Treatment_Plate1_327,No Treatment,train,1
+No Treatment_Plate1_328,No Treatment,train,1
+No Treatment_Plate1_329,No Treatment,train,1
+No Treatment_Plate1_330,No Treatment,train,1
+No Treatment_Plate2_001,No Treatment,train,2
+No Treatment_Plate2_019,No Treatment,train,2
+No Treatment_Plate2_022,No Treatment,train,2
+No Treatment_Plate2_028,No Treatment,train,2
+No Treatment_Plate2_045,No Treatment,train,2
+No Treatment_Plate2_047,No Treatment,train,2
+No Treatment_Plate2_048,No Treatment,train,2
+No Treatment_Plate2_057,No Treatment,train,2
+No Treatment_Plate2_059,No Treatment,train,2
+No Treatment_Plate2_061,No Treatment,train,2
+No Treatment_Plate2_063,No Treatment,train,2
+No Treatment_Plate2_066,No Treatment,train,2
+No Treatment_Plate2_071,No Treatment,train,2
+No Treatment_Plate2_078,No Treatment,train,2
+No Treatment_Plate2_081,No Treatment,train,2
+No Treatment_Plate2_093,No Treatment,train,2
+No Treatment_Plate2_106,No Treatment,train,2
+No Treatment_Plate2_120,No Treatment,train,2
+No Treatment_Plate2_126,No Treatment,train,2
+No Treatment_Plate2_130,No Treatment,train,2
+No Treatment_Plate2_135,No Treatment,train,2
+No Treatment_Plate2_140,No Treatment,train,2
+No Treatment_Plate2_148,No Treatment,train,2
+No Treatment_Plate2_151,No Treatment,train,2
+No Treatment_Plate2_157,No Treatment,train,2
+No Treatment_Plate2_158,No Treatment,train,2
+No Treatment_Plate2_161,No Treatment,train,2
+No Treatment_Plate2_164,No Treatment,train,2
+No Treatment_Plate2_165,No Treatment,train,2
+No Treatment_Plate2_168,No Treatment,train,2
+No Treatment_Plate2_181,No Treatment,train,2
+No Treatment_Plate2_196,No Treatment,train,2
+No Treatment_Plate2_201,No Treatment,train,2
+No Treatment_Plate2_202,No Treatment,train,2
+No Treatment_Plate2_205,No Treatment,train,2
+No Treatment_Plate2_213,No Treatment,train,2
+No Treatment_Plate2_225,No Treatment,train,2
+No Treatment_Plate2_227,No Treatment,train,2
+No Treatment_Plate2_230,No Treatment,train,2
+No Treatment_Plate2_234,No Treatment,train,2
+No Treatment_Plate2_235,No Treatment,train,2
+No Treatment_Plate2_237,No Treatment,train,2
+No Treatment_Plate2_238,No Treatment,train,2
+No Treatment_Plate2_243,No Treatment,train,2
+No Treatment_Plate2_257,No Treatment,train,2
+No Treatment_Plate2_269,No Treatment,train,2
+No Treatment_Plate2_270,No Treatment,train,2
+No Treatment_Plate2_271,No Treatment,train,2
+No Treatment_Plate2_283,No Treatment,train,2
+No Treatment_Plate2_285,No Treatment,train,2
+No Treatment_Plate2_303,No Treatment,train,2
+No Treatment_Plate2_304,No Treatment,train,2
+No Treatment_Plate2_313,No Treatment,train,2
+No Treatment_Plate2_320,No Treatment,train,2
+No Treatment_Plate2_324,No Treatment,train,2
+No Treatment_Plate2_325,No Treatment,train,2
+No Treatment_Plate3_003,No Treatment,train,3
+No Treatment_Plate3_005,No Treatment,train,3
+No Treatment_Plate3_008,No Treatment,train,3
+No Treatment_Plate3_009,No Treatment,train,3
+No Treatment_Plate3_010,No Treatment,train,3
+No Treatment_Plate3_013,No Treatment,train,3
+No Treatment_Plate3_017,No Treatment,train,3
+No Treatment_Plate3_018,No Treatment,train,3
+No Treatment_Plate3_020,No Treatment,train,3
+No Treatment_Plate3_024,No Treatment,train,3
+No Treatment_Plate3_027,No Treatment,train,3
+No Treatment_Plate3_029,No Treatment,train,3
+No Treatment_Plate3_030,No Treatment,train,3
+No Treatment_Plate3_032,No Treatment,train,3
+No Treatment_Plate3_034,No Treatment,train,3
+No Treatment_Plate3_036,No Treatment,train,3
+No Treatment_Plate3_037,No Treatment,train,3
+No Treatment_Plate3_039,No Treatment,train,3
+No Treatment_Plate3_040,No Treatment,train,3
+No Treatment_Plate3_042,No Treatment,train,3
+No Treatment_Plate3_044,No Treatment,train,3
+No Treatment_Plate3_046,No Treatment,train,3
+No Treatment_Plate3_049,No Treatment,train,3
+No Treatment_Plate3_051,No Treatment,train,3
+No Treatment_Plate3_053,No Treatment,train,3
+No Treatment_Plate3_060,No Treatment,train,3
+No Treatment_Plate3_062,No Treatment,train,3
+No Treatment_Plate3_065,No Treatment,train,3
+No Treatment_Plate3_069,No Treatment,train,3
+No Treatment_Plate3_072,No Treatment,train,3
+No Treatment_Plate3_073,No Treatment,train,3
+No Treatment_Plate3_077,No Treatment,train,3
+No Treatment_Plate3_079,No Treatment,train,3
+No Treatment_Plate3_080,No Treatment,train,3
+No Treatment_Plate3_086,No Treatment,train,3
+No Treatment_Plate3_088,No Treatment,train,3
+No Treatment_Plate3_090,No Treatment,train,3
+No Treatment_Plate3_091,No Treatment,train,3
+No Treatment_Plate3_095,No Treatment,train,3
+No Treatment_Plate3_103,No Treatment,train,3
+No Treatment_Plate3_104,No Treatment,train,3
+No Treatment_Plate3_105,No Treatment,train,3
+No Treatment_Plate3_107,No Treatment,train,3
+No Treatment_Plate3_108,No Treatment,train,3
+No Treatment_Plate3_112,No Treatment,train,3
+No Treatment_Plate3_117,No Treatment,train,3
+No Treatment_Plate3_118,No Treatment,train,3
+No Treatment_Plate3_119,No Treatment,train,3
+No Treatment_Plate3_124,No Treatment,train,3
+No Treatment_Plate3_136,No Treatment,train,3
+No Treatment_Plate3_137,No Treatment,train,3
+No Treatment_Plate3_138,No Treatment,train,3
+No Treatment_Plate3_146,No Treatment,train,3
+No Treatment_Plate3_150,No Treatment,train,3
+No Treatment_Plate3_155,No Treatment,train,3
+No Treatment_Plate3_159,No Treatment,train,3
+No Treatment_Plate3_160,No Treatment,train,3
+No Treatment_Plate3_166,No Treatment,train,3
+No Treatment_Plate3_173,No Treatment,train,3
+No Treatment_Plate3_174,No Treatment,train,3
+No Treatment_Plate3_176,No Treatment,train,3
+No Treatment_Plate3_179,No Treatment,train,3
+No Treatment_Plate3_183,No Treatment,train,3
+No Treatment_Plate3_184,No Treatment,train,3
+No Treatment_Plate3_186,No Treatment,train,3
+No Treatment_Plate3_191,No Treatment,train,3
+No Treatment_Plate3_193,No Treatment,train,3
+No Treatment_Plate3_195,No Treatment,train,3
+No Treatment_Plate3_197,No Treatment,train,3
+No Treatment_Plate3_198,No Treatment,train,3
+No Treatment_Plate3_199,No Treatment,train,3
+No Treatment_Plate3_203,No Treatment,train,3
+No Treatment_Plate3_204,No Treatment,train,3
+No Treatment_Plate3_210,No Treatment,train,3
+No Treatment_Plate3_214,No Treatment,train,3
+No Treatment_Plate3_217,No Treatment,train,3
+No Treatment_Plate3_218,No Treatment,train,3
+No Treatment_Plate3_223,No Treatment,train,3
+No Treatment_Plate3_229,No Treatment,train,3
+No Treatment_Plate3_236,No Treatment,train,3
+No Treatment_Plate3_240,No Treatment,train,3
+No Treatment_Plate3_241,No Treatment,train,3
+No Treatment_Plate3_242,No Treatment,train,3
+No Treatment_Plate3_244,No Treatment,train,3
+No Treatment_Plate3_248,No Treatment,train,3
+No Treatment_Plate3_249,No Treatment,train,3
+No Treatment_Plate3_250,No Treatment,train,3
+No Treatment_Plate3_251,No Treatment,train,3
+No Treatment_Plate3_258,No Treatment,train,3
+No Treatment_Plate3_259,No Treatment,train,3
+No Treatment_Plate3_260,No Treatment,train,3
+No Treatment_Plate3_261,No Treatment,train,3
+No Treatment_Plate3_262,No Treatment,train,3
+No Treatment_Plate3_264,No Treatment,train,3
+No Treatment_Plate3_265,No Treatment,train,3
+No Treatment_Plate3_267,No Treatment,train,3
+No Treatment_Plate3_268,No Treatment,train,3
+No Treatment_Plate3_274,No Treatment,train,3
+No Treatment_Plate3_275,No Treatment,train,3
+No Treatment_Plate3_276,No Treatment,train,3
+No Treatment_Plate3_280,No Treatment,train,3
+No Treatment_Plate3_281,No Treatment,train,3
+No Treatment_Plate3_282,No Treatment,train,3
+No Treatment_Plate3_286,No Treatment,train,3
+No Treatment_Plate3_287,No Treatment,train,3
+No Treatment_Plate3_288,No Treatment,train,3
+No Treatment_Plate3_290,No Treatment,train,3
+No Treatment_Plate3_292,No Treatment,train,3
+No Treatment_Plate3_295,No Treatment,train,3
+No Treatment_Plate3_296,No Treatment,train,3
+No Treatment_Plate3_297,No Treatment,train,3
+No Treatment_Plate3_301,No Treatment,train,3
+No Treatment_Plate3_307,No Treatment,train,3
+No Treatment_Plate3_309,No Treatment,train,3
+No Treatment_Plate3_310,No Treatment,train,3
+No Treatment_Plate3_311,No Treatment,train,3
+No Treatment_Plate3_312,No Treatment,train,3
+No Treatment_Plate3_314,No Treatment,train,3
+No Treatment_Plate3_319,No Treatment,train,3
+No Treatment_Plate3_321,No Treatment,train,3
+No Treatment_Plate3_326,No Treatment,train,3
+Nocodazole_Plate1_006,Nocodazole,train,1
+Nocodazole_Plate1_012,Nocodazole,train,1
+Nocodazole_Plate1_015,Nocodazole,train,1
+Nocodazole_Plate1_017,Nocodazole,train,1
+Nocodazole_Plate1_022,Nocodazole,train,1
+Nocodazole_Plate1_024,Nocodazole,train,1
+Nocodazole_Plate1_025,Nocodazole,train,1
+Nocodazole_Plate1_026,Nocodazole,train,1
+Nocodazole_Plate1_027,Nocodazole,train,1
+Nocodazole_Plate1_028,Nocodazole,train,1
+Nocodazole_Plate1_030,Nocodazole,train,1
+Nocodazole_Plate1_034,Nocodazole,train,1
+Nocodazole_Plate1_035,Nocodazole,train,1
+Nocodazole_Plate1_038,Nocodazole,train,1
+Nocodazole_Plate1_040,Nocodazole,train,1
+Nocodazole_Plate1_041,Nocodazole,train,1
+Nocodazole_Plate1_042,Nocodazole,train,1
+Nocodazole_Plate1_045,Nocodazole,train,1
+Nocodazole_Plate1_046,Nocodazole,train,1
+Nocodazole_Plate1_048,Nocodazole,train,1
+Nocodazole_Plate1_049,Nocodazole,train,1
+Nocodazole_Plate1_050,Nocodazole,train,1
+Nocodazole_Plate1_051,Nocodazole,train,1
+Nocodazole_Plate1_052,Nocodazole,train,1
+Nocodazole_Plate1_055,Nocodazole,train,1
+Nocodazole_Plate1_056,Nocodazole,train,1
+Nocodazole_Plate1_057,Nocodazole,train,1
+Nocodazole_Plate1_059,Nocodazole,train,1
+Nocodazole_Plate1_061,Nocodazole,train,1
+Nocodazole_Plate1_064,Nocodazole,train,1
+Nocodazole_Plate1_065,Nocodazole,train,1
+Nocodazole_Plate1_066,Nocodazole,train,1
+Nocodazole_Plate1_067,Nocodazole,train,1
+Nocodazole_Plate1_069,Nocodazole,train,1
+Nocodazole_Plate1_070,Nocodazole,train,1
+Nocodazole_Plate1_071,Nocodazole,train,1
+Nocodazole_Plate1_074,Nocodazole,train,1
+Nocodazole_Plate1_077,Nocodazole,train,1
+Nocodazole_Plate1_078,Nocodazole,train,1
+Nocodazole_Plate1_080,Nocodazole,train,1
+Nocodazole_Plate1_081,Nocodazole,train,1
+Nocodazole_Plate1_082,Nocodazole,train,1
+Nocodazole_Plate1_085,Nocodazole,train,1
+Nocodazole_Plate1_086,Nocodazole,train,1
+Nocodazole_Plate1_088,Nocodazole,train,1
+Nocodazole_Plate1_090,Nocodazole,train,1
+Nocodazole_Plate1_092,Nocodazole,train,1
+Nocodazole_Plate1_096,Nocodazole,train,1
+Nocodazole_Plate1_099,Nocodazole,train,1
+Nocodazole_Plate1_100,Nocodazole,train,1
+Nocodazole_Plate1_101,Nocodazole,train,1
+Nocodazole_Plate1_103,Nocodazole,train,1
+Nocodazole_Plate1_104,Nocodazole,train,1
+Nocodazole_Plate1_106,Nocodazole,train,1
+Nocodazole_Plate1_107,Nocodazole,train,1
+Nocodazole_Plate1_108,Nocodazole,train,1
+Nocodazole_Plate1_118,Nocodazole,train,1
+Nocodazole_Plate1_119,Nocodazole,train,1
+Nocodazole_Plate1_120,Nocodazole,train,1
+Nocodazole_Plate1_123,Nocodazole,train,1
+Nocodazole_Plate1_125,Nocodazole,train,1
+Nocodazole_Plate1_126,Nocodazole,train,1
+Nocodazole_Plate1_128,Nocodazole,train,1
+Nocodazole_Plate1_133,Nocodazole,train,1
+Nocodazole_Plate1_135,Nocodazole,train,1
+Nocodazole_Plate1_136,Nocodazole,train,1
+Nocodazole_Plate1_137,Nocodazole,train,1
+Nocodazole_Plate1_140,Nocodazole,train,1
+Nocodazole_Plate1_141,Nocodazole,train,1
+Nocodazole_Plate1_142,Nocodazole,train,1
+Nocodazole_Plate1_144,Nocodazole,train,1
+Nocodazole_Plate1_145,Nocodazole,train,1
+Nocodazole_Plate1_146,Nocodazole,train,1
+Nocodazole_Plate1_148,Nocodazole,train,1
+Nocodazole_Plate1_155,Nocodazole,train,1
+Nocodazole_Plate1_163,Nocodazole,train,1
+Nocodazole_Plate1_164,Nocodazole,train,1
+Nocodazole_Plate1_166,Nocodazole,train,1
+Nocodazole_Plate1_169,Nocodazole,train,1
+Nocodazole_Plate1_171,Nocodazole,train,1
+Nocodazole_Plate1_172,Nocodazole,train,1
+Nocodazole_Plate1_173,Nocodazole,train,1
+Nocodazole_Plate1_176,Nocodazole,train,1
+Nocodazole_Plate1_177,Nocodazole,train,1
+Nocodazole_Plate1_179,Nocodazole,train,1
+Nocodazole_Plate1_183,Nocodazole,train,1
+Nocodazole_Plate1_184,Nocodazole,train,1
+Nocodazole_Plate1_186,Nocodazole,train,1
+Nocodazole_Plate1_187,Nocodazole,train,1
+Nocodazole_Plate1_188,Nocodazole,train,1
+Nocodazole_Plate1_189,Nocodazole,train,1
+Nocodazole_Plate1_190,Nocodazole,train,1
+Nocodazole_Plate1_192,Nocodazole,train,1
+Nocodazole_Plate1_193,Nocodazole,train,1
+Nocodazole_Plate1_195,Nocodazole,train,1
+Nocodazole_Plate1_196,Nocodazole,train,1
+Nocodazole_Plate1_197,Nocodazole,train,1
+Nocodazole_Plate1_201,Nocodazole,train,1
+Nocodazole_Plate1_202,Nocodazole,train,1
+Nocodazole_Plate1_203,Nocodazole,train,1
+Nocodazole_Plate1_204,Nocodazole,train,1
+Nocodazole_Plate1_205,Nocodazole,train,1
+Nocodazole_Plate1_206,Nocodazole,train,1
+Nocodazole_Plate1_208,Nocodazole,train,1
+Nocodazole_Plate1_213,Nocodazole,train,1
+Nocodazole_Plate1_214,Nocodazole,train,1
+Nocodazole_Plate1_215,Nocodazole,train,1
+Nocodazole_Plate1_216,Nocodazole,train,1
+Nocodazole_Plate1_217,Nocodazole,train,1
+Nocodazole_Plate1_218,Nocodazole,train,1
+Nocodazole_Plate1_219,Nocodazole,train,1
+Nocodazole_Plate1_220,Nocodazole,train,1
+Nocodazole_Plate1_221,Nocodazole,train,1
+Nocodazole_Plate1_223,Nocodazole,train,1
+Nocodazole_Plate1_227,Nocodazole,train,1
+Nocodazole_Plate1_231,Nocodazole,train,1
+Nocodazole_Plate1_233,Nocodazole,train,1
+Nocodazole_Plate1_236,Nocodazole,train,1
+Nocodazole_Plate1_237,Nocodazole,train,1
+Nocodazole_Plate1_238,Nocodazole,train,1
+Nocodazole_Plate1_239,Nocodazole,train,1
+Nocodazole_Plate1_241,Nocodazole,train,1
+Nocodazole_Plate1_243,Nocodazole,train,1
+Nocodazole_Plate1_248,Nocodazole,train,1
+Nocodazole_Plate1_250,Nocodazole,train,1
+Nocodazole_Plate1_251,Nocodazole,train,1
+Nocodazole_Plate1_252,Nocodazole,train,1
+Nocodazole_Plate1_253,Nocodazole,train,1
+Nocodazole_Plate1_256,Nocodazole,train,1
+Nocodazole_Plate1_257,Nocodazole,train,1
+Nocodazole_Plate1_258,Nocodazole,train,1
+Nocodazole_Plate1_263,Nocodazole,train,1
+Nocodazole_Plate1_265,Nocodazole,train,1
+Nocodazole_Plate1_266,Nocodazole,train,1
+Nocodazole_Plate1_267,Nocodazole,train,1
+Nocodazole_Plate1_268,Nocodazole,train,1
+Nocodazole_Plate1_273,Nocodazole,train,1
+Nocodazole_Plate1_274,Nocodazole,train,1
+Nocodazole_Plate1_277,Nocodazole,train,1
+Nocodazole_Plate1_278,Nocodazole,train,1
+Nocodazole_Plate1_279,Nocodazole,train,1
+Nocodazole_Plate1_281,Nocodazole,train,1
+Nocodazole_Plate1_289,Nocodazole,train,1
+Nocodazole_Plate1_290,Nocodazole,train,1
+Nocodazole_Plate1_291,Nocodazole,train,1
+Nocodazole_Plate1_294,Nocodazole,train,1
+Nocodazole_Plate1_296,Nocodazole,train,1
+Nocodazole_Plate1_297,Nocodazole,train,1
+Nocodazole_Plate1_298,Nocodazole,train,1
+Nocodazole_Plate1_304,Nocodazole,train,1
+Nocodazole_Plate1_306,Nocodazole,train,1
+Nocodazole_Plate1_310,Nocodazole,train,1
+Nocodazole_Plate1_313,Nocodazole,train,1
+Nocodazole_Plate1_314,Nocodazole,train,1
+Nocodazole_Plate1_315,Nocodazole,train,1
+Nocodazole_Plate1_316,Nocodazole,train,1
+Nocodazole_Plate1_319,Nocodazole,train,1
+Nocodazole_Plate1_321,Nocodazole,train,1
+Nocodazole_Plate1_324,Nocodazole,train,1
+Nocodazole_Plate1_325,Nocodazole,train,1
+Nocodazole_Plate1_326,Nocodazole,train,1
+Nocodazole_Plate1_328,Nocodazole,train,1
+Nocodazole_Plate1_333,Nocodazole,train,1
+Nocodazole_Plate1_340,Nocodazole,train,1
+Nocodazole_Plate1_342,Nocodazole,train,1
+Nocodazole_Plate1_343,Nocodazole,train,1
+Nocodazole_Plate1_345,Nocodazole,train,1
+Nocodazole_Plate1_348,Nocodazole,train,1
+Nocodazole_Plate1_349,Nocodazole,train,1
+Nocodazole_Plate1_351,Nocodazole,train,1
+Nocodazole_Plate1_354,Nocodazole,train,1
+Nocodazole_Plate2_002,Nocodazole,train,2
+Nocodazole_Plate2_003,Nocodazole,train,2
+Nocodazole_Plate2_008,Nocodazole,train,2
+Nocodazole_Plate2_013,Nocodazole,train,2
+Nocodazole_Plate2_016,Nocodazole,train,2
+Nocodazole_Plate2_023,Nocodazole,train,2
+Nocodazole_Plate2_031,Nocodazole,train,2
+Nocodazole_Plate2_032,Nocodazole,train,2
+Nocodazole_Plate2_033,Nocodazole,train,2
+Nocodazole_Plate2_039,Nocodazole,train,2
+Nocodazole_Plate2_043,Nocodazole,train,2
+Nocodazole_Plate2_053,Nocodazole,train,2
+Nocodazole_Plate2_060,Nocodazole,train,2
+Nocodazole_Plate2_062,Nocodazole,train,2
+Nocodazole_Plate2_068,Nocodazole,train,2
+Nocodazole_Plate2_072,Nocodazole,train,2
+Nocodazole_Plate2_075,Nocodazole,train,2
+Nocodazole_Plate2_084,Nocodazole,train,2
+Nocodazole_Plate2_087,Nocodazole,train,2
+Nocodazole_Plate2_091,Nocodazole,train,2
+Nocodazole_Plate2_102,Nocodazole,train,2
+Nocodazole_Plate2_124,Nocodazole,train,2
+Nocodazole_Plate2_127,Nocodazole,train,2
+Nocodazole_Plate2_132,Nocodazole,train,2
+Nocodazole_Plate2_134,Nocodazole,train,2
+Nocodazole_Plate2_139,Nocodazole,train,2
+Nocodazole_Plate2_143,Nocodazole,train,2
+Nocodazole_Plate2_150,Nocodazole,train,2
+Nocodazole_Plate2_154,Nocodazole,train,2
+Nocodazole_Plate2_156,Nocodazole,train,2
+Nocodazole_Plate2_158,Nocodazole,train,2
+Nocodazole_Plate2_159,Nocodazole,train,2
+Nocodazole_Plate2_160,Nocodazole,train,2
+Nocodazole_Plate2_161,Nocodazole,train,2
+Nocodazole_Plate2_165,Nocodazole,train,2
+Nocodazole_Plate2_167,Nocodazole,train,2
+Nocodazole_Plate2_168,Nocodazole,train,2
+Nocodazole_Plate2_180,Nocodazole,train,2
+Nocodazole_Plate2_191,Nocodazole,train,2
+Nocodazole_Plate2_200,Nocodazole,train,2
+Nocodazole_Plate2_207,Nocodazole,train,2
+Nocodazole_Plate2_210,Nocodazole,train,2
+Nocodazole_Plate2_222,Nocodazole,train,2
+Nocodazole_Plate2_225,Nocodazole,train,2
+Nocodazole_Plate2_226,Nocodazole,train,2
+Nocodazole_Plate2_229,Nocodazole,train,2
+Nocodazole_Plate2_230,Nocodazole,train,2
+Nocodazole_Plate2_232,Nocodazole,train,2
+Nocodazole_Plate2_235,Nocodazole,train,2
+Nocodazole_Plate2_244,Nocodazole,train,2
+Nocodazole_Plate2_245,Nocodazole,train,2
+Nocodazole_Plate2_249,Nocodazole,train,2
+Nocodazole_Plate2_259,Nocodazole,train,2
+Nocodazole_Plate2_261,Nocodazole,train,2
+Nocodazole_Plate2_262,Nocodazole,train,2
+Nocodazole_Plate2_270,Nocodazole,train,2
+Nocodazole_Plate2_271,Nocodazole,train,2
+Nocodazole_Plate2_287,Nocodazole,train,2
+Nocodazole_Plate2_301,Nocodazole,train,2
+Nocodazole_Plate2_302,Nocodazole,train,2
+Nocodazole_Plate2_303,Nocodazole,train,2
+Nocodazole_Plate2_308,Nocodazole,train,2
+Nocodazole_Plate2_318,Nocodazole,train,2
+Nocodazole_Plate2_329,Nocodazole,train,2
+Nocodazole_Plate2_337,Nocodazole,train,2
+Nocodazole_Plate2_344,Nocodazole,train,2
+Nocodazole_Plate2_346,Nocodazole,train,2
+Nocodazole_Plate2_347,Nocodazole,train,2
+Nocodazole_Plate2_350,Nocodazole,train,2
+Nocodazole_Plate2_352,Nocodazole,train,2
+Nocodazole_Plate2_353,Nocodazole,train,2
+Nocodazole_Plate2_355,Nocodazole,train,2
+Nocodazole_Plate3_000,Nocodazole,train,3
+Nocodazole_Plate3_001,Nocodazole,train,3
+Nocodazole_Plate3_004,Nocodazole,train,3
+Nocodazole_Plate3_005,Nocodazole,train,3
+Nocodazole_Plate3_007,Nocodazole,train,3
+Nocodazole_Plate3_009,Nocodazole,train,3
+Nocodazole_Plate3_010,Nocodazole,train,3
+Nocodazole_Plate3_011,Nocodazole,train,3
+Nocodazole_Plate3_014,Nocodazole,train,3
+Nocodazole_Plate3_018,Nocodazole,train,3
+Nocodazole_Plate3_019,Nocodazole,train,3
+Nocodazole_Plate3_020,Nocodazole,train,3
+Nocodazole_Plate3_021,Nocodazole,train,3
+Nocodazole_Plate3_029,Nocodazole,train,3
+Nocodazole_Plate3_036,Nocodazole,train,3
+Nocodazole_Plate3_037,Nocodazole,train,3
+Nocodazole_Plate3_044,Nocodazole,train,3
+Nocodazole_Plate3_047,Nocodazole,train,3
+Nocodazole_Plate3_054,Nocodazole,train,3
+Nocodazole_Plate3_058,Nocodazole,train,3
+Nocodazole_Plate3_063,Nocodazole,train,3
+Nocodazole_Plate3_073,Nocodazole,train,3
+Nocodazole_Plate3_076,Nocodazole,train,3
+Nocodazole_Plate3_079,Nocodazole,train,3
+Nocodazole_Plate3_083,Nocodazole,train,3
+Nocodazole_Plate3_089,Nocodazole,train,3
+Nocodazole_Plate3_093,Nocodazole,train,3
+Nocodazole_Plate3_094,Nocodazole,train,3
+Nocodazole_Plate3_095,Nocodazole,train,3
+Nocodazole_Plate3_097,Nocodazole,train,3
+Nocodazole_Plate3_098,Nocodazole,train,3
+Nocodazole_Plate3_105,Nocodazole,train,3
+Nocodazole_Plate3_109,Nocodazole,train,3
+Nocodazole_Plate3_110,Nocodazole,train,3
+Nocodazole_Plate3_111,Nocodazole,train,3
+Nocodazole_Plate3_112,Nocodazole,train,3
+Nocodazole_Plate3_113,Nocodazole,train,3
+Nocodazole_Plate3_114,Nocodazole,train,3
+Nocodazole_Plate3_115,Nocodazole,train,3
+Nocodazole_Plate3_116,Nocodazole,train,3
+Nocodazole_Plate3_117,Nocodazole,train,3
+Nocodazole_Plate3_121,Nocodazole,train,3
+Nocodazole_Plate3_122,Nocodazole,train,3
+Nocodazole_Plate3_129,Nocodazole,train,3
+Nocodazole_Plate3_130,Nocodazole,train,3
+Nocodazole_Plate3_131,Nocodazole,train,3
+Nocodazole_Plate3_138,Nocodazole,train,3
+Nocodazole_Plate3_147,Nocodazole,train,3
+Nocodazole_Plate3_149,Nocodazole,train,3
+Nocodazole_Plate3_151,Nocodazole,train,3
+Nocodazole_Plate3_152,Nocodazole,train,3
+Nocodazole_Plate3_153,Nocodazole,train,3
+Nocodazole_Plate3_157,Nocodazole,train,3
+Nocodazole_Plate3_162,Nocodazole,train,3
+Nocodazole_Plate3_170,Nocodazole,train,3
+Nocodazole_Plate3_174,Nocodazole,train,3
+Nocodazole_Plate3_175,Nocodazole,train,3
+Nocodazole_Plate3_178,Nocodazole,train,3
+Nocodazole_Plate3_181,Nocodazole,train,3
+Nocodazole_Plate3_182,Nocodazole,train,3
+Nocodazole_Plate3_185,Nocodazole,train,3
+Nocodazole_Plate3_194,Nocodazole,train,3
+Nocodazole_Plate3_198,Nocodazole,train,3
+Nocodazole_Plate3_199,Nocodazole,train,3
+Nocodazole_Plate3_209,Nocodazole,train,3
+Nocodazole_Plate3_211,Nocodazole,train,3
+Nocodazole_Plate3_212,Nocodazole,train,3
+Nocodazole_Plate3_224,Nocodazole,train,3
+Nocodazole_Plate3_228,Nocodazole,train,3
+Nocodazole_Plate3_234,Nocodazole,train,3
+Nocodazole_Plate3_240,Nocodazole,train,3
+Nocodazole_Plate3_242,Nocodazole,train,3
+Nocodazole_Plate3_246,Nocodazole,train,3
+Nocodazole_Plate3_247,Nocodazole,train,3
+Nocodazole_Plate3_254,Nocodazole,train,3
+Nocodazole_Plate3_255,Nocodazole,train,3
+Nocodazole_Plate3_260,Nocodazole,train,3
+Nocodazole_Plate3_264,Nocodazole,train,3
+Nocodazole_Plate3_269,Nocodazole,train,3
+Nocodazole_Plate3_272,Nocodazole,train,3
+Nocodazole_Plate3_275,Nocodazole,train,3
+Nocodazole_Plate3_276,Nocodazole,train,3
+Nocodazole_Plate3_280,Nocodazole,train,3
+Nocodazole_Plate3_282,Nocodazole,train,3
+Nocodazole_Plate3_283,Nocodazole,train,3
+Nocodazole_Plate3_284,Nocodazole,train,3
+Nocodazole_Plate3_285,Nocodazole,train,3
+Nocodazole_Plate3_286,Nocodazole,train,3
+Nocodazole_Plate3_288,Nocodazole,train,3
+Nocodazole_Plate3_292,Nocodazole,train,3
+Nocodazole_Plate3_293,Nocodazole,train,3
+Nocodazole_Plate3_295,Nocodazole,train,3
+Nocodazole_Plate3_299,Nocodazole,train,3
+Nocodazole_Plate3_300,Nocodazole,train,3
+Nocodazole_Plate3_305,Nocodazole,train,3
+Nocodazole_Plate3_307,Nocodazole,train,3
+Nocodazole_Plate3_309,Nocodazole,train,3
+Nocodazole_Plate3_311,Nocodazole,train,3
+Nocodazole_Plate3_312,Nocodazole,train,3
+Nocodazole_Plate3_317,Nocodazole,train,3
+Nocodazole_Plate3_320,Nocodazole,train,3
+Nocodazole_Plate3_322,Nocodazole,train,3
+Nocodazole_Plate3_323,Nocodazole,train,3
+Nocodazole_Plate3_327,Nocodazole,train,3
+Nocodazole_Plate3_330,Nocodazole,train,3
+Nocodazole_Plate3_331,Nocodazole,train,3
+Nocodazole_Plate3_332,Nocodazole,train,3
+Nocodazole_Plate3_334,Nocodazole,train,3
+Nocodazole_Plate3_335,Nocodazole,train,3
+Nocodazole_Plate3_336,Nocodazole,train,3
+Nocodazole_Plate3_338,Nocodazole,train,3
+Nocodazole_Plate3_339,Nocodazole,train,3
+Nocodazole_Plate3_341,Nocodazole,train,3
+Nocodazole_Plate3_356,Nocodazole,train,3
+Nocodazole_Plate3_357,Nocodazole,train,3
+Blebbistatin_Plate1_344,Blebbistatin,val,1
+Blebbistatin_Plate1_349,Blebbistatin,val,1
+Blebbistatin_Plate1_350,Blebbistatin,val,1
+Blebbistatin_Plate1_352,Blebbistatin,val,1
+Blebbistatin_Plate1_354,Blebbistatin,val,1
+Blebbistatin_Plate1_360,Blebbistatin,val,1
+Blebbistatin_Plate1_365,Blebbistatin,val,1
+Blebbistatin_Plate1_367,Blebbistatin,val,1
+Blebbistatin_Plate1_370,Blebbistatin,val,1
+Blebbistatin_Plate1_371,Blebbistatin,val,1
+Blebbistatin_Plate1_379,Blebbistatin,val,1
+Blebbistatin_Plate1_383,Blebbistatin,val,1
+Blebbistatin_Plate1_387,Blebbistatin,val,1
+Blebbistatin_Plate1_388,Blebbistatin,val,1
+Blebbistatin_Plate1_392,Blebbistatin,val,1
+Blebbistatin_Plate1_393,Blebbistatin,val,1
+Blebbistatin_Plate1_394,Blebbistatin,val,1
+Blebbistatin_Plate2_346,Blebbistatin,val,2
+Blebbistatin_Plate2_347,Blebbistatin,val,2
+Blebbistatin_Plate2_355,Blebbistatin,val,2
+Blebbistatin_Plate2_356,Blebbistatin,val,2
+Blebbistatin_Plate2_359,Blebbistatin,val,2
+Blebbistatin_Plate2_361,Blebbistatin,val,2
+Blebbistatin_Plate2_364,Blebbistatin,val,2
+Blebbistatin_Plate2_366,Blebbistatin,val,2
+Blebbistatin_Plate2_369,Blebbistatin,val,2
+Blebbistatin_Plate2_374,Blebbistatin,val,2
+Blebbistatin_Plate2_375,Blebbistatin,val,2
+Blebbistatin_Plate2_377,Blebbistatin,val,2
+Blebbistatin_Plate2_380,Blebbistatin,val,2
+Blebbistatin_Plate2_385,Blebbistatin,val,2
+Blebbistatin_Plate2_395,Blebbistatin,val,2
+Blebbistatin_Plate3_343,Blebbistatin,val,3
+Blebbistatin_Plate3_345,Blebbistatin,val,3
+Blebbistatin_Plate3_348,Blebbistatin,val,3
+Blebbistatin_Plate3_351,Blebbistatin,val,3
+Blebbistatin_Plate3_353,Blebbistatin,val,3
+Blebbistatin_Plate3_357,Blebbistatin,val,3
+Blebbistatin_Plate3_358,Blebbistatin,val,3
+Blebbistatin_Plate3_362,Blebbistatin,val,3
+Blebbistatin_Plate3_363,Blebbistatin,val,3
+Blebbistatin_Plate3_368,Blebbistatin,val,3
+Blebbistatin_Plate3_372,Blebbistatin,val,3
+Blebbistatin_Plate3_373,Blebbistatin,val,3
+Blebbistatin_Plate3_376,Blebbistatin,val,3
+Blebbistatin_Plate3_378,Blebbistatin,val,3
+Blebbistatin_Plate3_381,Blebbistatin,val,3
+Blebbistatin_Plate3_382,Blebbistatin,val,3
+Blebbistatin_Plate3_384,Blebbistatin,val,3
+Blebbistatin_Plate3_386,Blebbistatin,val,3
+Blebbistatin_Plate3_389,Blebbistatin,val,3
+Blebbistatin_Plate3_390,Blebbistatin,val,3
+Blebbistatin_Plate3_391,Blebbistatin,val,3
+No Treatment_Plate1_332,No Treatment,val,1
+No Treatment_Plate1_335,No Treatment,val,1
+No Treatment_Plate1_339,No Treatment,val,1
+No Treatment_Plate1_342,No Treatment,val,1
+No Treatment_Plate1_343,No Treatment,val,1
+No Treatment_Plate1_344,No Treatment,val,1
+No Treatment_Plate1_349,No Treatment,val,1
+No Treatment_Plate1_351,No Treatment,val,1
+No Treatment_Plate1_354,No Treatment,val,1
+No Treatment_Plate1_356,No Treatment,val,1
+No Treatment_Plate1_358,No Treatment,val,1
+No Treatment_Plate1_361,No Treatment,val,1
+No Treatment_Plate1_362,No Treatment,val,1
+No Treatment_Plate1_363,No Treatment,val,1
+No Treatment_Plate1_371,No Treatment,val,1
+No Treatment_Plate1_376,No Treatment,val,1
+No Treatment_Plate1_377,No Treatment,val,1
+No Treatment_Plate1_380,No Treatment,val,1
+No Treatment_Plate2_331,No Treatment,val,2
+No Treatment_Plate2_338,No Treatment,val,2
+No Treatment_Plate2_341,No Treatment,val,2
+No Treatment_Plate2_355,No Treatment,val,2
+No Treatment_Plate2_365,No Treatment,val,2
+No Treatment_Plate2_367,No Treatment,val,2
+No Treatment_Plate2_370,No Treatment,val,2
+No Treatment_Plate2_373,No Treatment,val,2
+No Treatment_Plate2_378,No Treatment,val,2
+No Treatment_Plate2_383,No Treatment,val,2
+No Treatment_Plate3_333,No Treatment,val,3
+No Treatment_Plate3_334,No Treatment,val,3
+No Treatment_Plate3_336,No Treatment,val,3
+No Treatment_Plate3_337,No Treatment,val,3
+No Treatment_Plate3_340,No Treatment,val,3
+No Treatment_Plate3_345,No Treatment,val,3
+No Treatment_Plate3_346,No Treatment,val,3
+No Treatment_Plate3_347,No Treatment,val,3
+No Treatment_Plate3_348,No Treatment,val,3
+No Treatment_Plate3_350,No Treatment,val,3
+No Treatment_Plate3_352,No Treatment,val,3
+No Treatment_Plate3_353,No Treatment,val,3
+No Treatment_Plate3_357,No Treatment,val,3
+No Treatment_Plate3_359,No Treatment,val,3
+No Treatment_Plate3_360,No Treatment,val,3
+No Treatment_Plate3_364,No Treatment,val,3
+No Treatment_Plate3_366,No Treatment,val,3
+No Treatment_Plate3_368,No Treatment,val,3
+No Treatment_Plate3_369,No Treatment,val,3
+No Treatment_Plate3_372,No Treatment,val,3
+No Treatment_Plate3_374,No Treatment,val,3
+No Treatment_Plate3_375,No Treatment,val,3
+No Treatment_Plate3_379,No Treatment,val,3
+No Treatment_Plate3_381,No Treatment,val,3
+No Treatment_Plate3_382,No Treatment,val,3
+Nocodazole_Plate1_359,Nocodazole,val,1
+Nocodazole_Plate1_360,Nocodazole,val,1
+Nocodazole_Plate1_361,Nocodazole,val,1
+Nocodazole_Plate1_363,Nocodazole,val,1
+Nocodazole_Plate1_365,Nocodazole,val,1
+Nocodazole_Plate1_367,Nocodazole,val,1
+Nocodazole_Plate1_369,Nocodazole,val,1
+Nocodazole_Plate1_370,Nocodazole,val,1
+Nocodazole_Plate1_372,Nocodazole,val,1
+Nocodazole_Plate1_375,Nocodazole,val,1
+Nocodazole_Plate1_377,Nocodazole,val,1
+Nocodazole_Plate1_380,Nocodazole,val,1
+Nocodazole_Plate1_381,Nocodazole,val,1
+Nocodazole_Plate1_382,Nocodazole,val,1
+Nocodazole_Plate1_384,Nocodazole,val,1
+Nocodazole_Plate1_386,Nocodazole,val,1
+Nocodazole_Plate1_387,Nocodazole,val,1
+Nocodazole_Plate1_388,Nocodazole,val,1
+Nocodazole_Plate1_389,Nocodazole,val,1
+Nocodazole_Plate1_392,Nocodazole,val,1
+Nocodazole_Plate1_393,Nocodazole,val,1
+Nocodazole_Plate1_394,Nocodazole,val,1
+Nocodazole_Plate1_395,Nocodazole,val,1
+Nocodazole_Plate1_396,Nocodazole,val,1
+Nocodazole_Plate1_398,Nocodazole,val,1
+Nocodazole_Plate1_399,Nocodazole,val,1
+Nocodazole_Plate1_401,Nocodazole,val,1
+Nocodazole_Plate1_402,Nocodazole,val,1
+Nocodazole_Plate1_403,Nocodazole,val,1
+Nocodazole_Plate1_406,Nocodazole,val,1
+Nocodazole_Plate1_407,Nocodazole,val,1
+Nocodazole_Plate1_408,Nocodazole,val,1
+Nocodazole_Plate1_409,Nocodazole,val,1
+Nocodazole_Plate1_410,Nocodazole,val,1
+Nocodazole_Plate1_411,Nocodazole,val,1
+Nocodazole_Plate2_358,Nocodazole,val,2
+Nocodazole_Plate2_374,Nocodazole,val,2
+Nocodazole_Plate2_385,Nocodazole,val,2
+Nocodazole_Plate2_390,Nocodazole,val,2
+Nocodazole_Plate2_391,Nocodazole,val,2
+Nocodazole_Plate3_362,Nocodazole,val,3
+Nocodazole_Plate3_364,Nocodazole,val,3
+Nocodazole_Plate3_366,Nocodazole,val,3
+Nocodazole_Plate3_368,Nocodazole,val,3
+Nocodazole_Plate3_371,Nocodazole,val,3
+Nocodazole_Plate3_373,Nocodazole,val,3
+Nocodazole_Plate3_376,Nocodazole,val,3
+Nocodazole_Plate3_378,Nocodazole,val,3
+Nocodazole_Plate3_379,Nocodazole,val,3
+Nocodazole_Plate3_383,Nocodazole,val,3
+Nocodazole_Plate3_397,Nocodazole,val,3
+Nocodazole_Plate3_400,Nocodazole,val,3
+Nocodazole_Plate3_404,Nocodazole,val,3
+Nocodazole_Plate3_405,Nocodazole,val,3

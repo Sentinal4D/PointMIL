@@ -1,0 +1,30 @@
+# Smoke test: tiny synthetic data, CPU, a few iterations. Not a paper experiment.
+experiment: {name: smoke_synthetic_transformer_conjunctive, recipe: pointmil, paper: none}
+seed: 0
+data:
+  name: synthetic
+  root: ""
+  num_samples: 16
+  num_points: 256
+  sampling: random
+  normalise: true
+  feature_keys: [pos, normals]
+  batch_size: 4
+  val_batch_size: 4
+  num_workers: 0
+  train_transforms: [{name: random_scale_translate, scale: [0.8, 1.2], shift: 0.2}]
+  test_transforms: []
+model:
+  backbone: {name: transformer, in_channels: 6, coord_dims: 3, num_k: [16, 16], channel_dim: [32, 64], channel_raise: [32, 64], dim_k: 8, heads: 8}
+  pooling: {name: conjunctive, num_classes: 2, dropout: 0.1, attention_hidden: 8, non_linear: false, non_linear_v1: false, positional_encoding: true, contextual_attention: true, context_k: 4, num_points: 256}
+train:
+  epochs: 2
+  optimizer: {name: adamw, lr: 0.001, weight_decay: 0.0001}
+  scheduler: {name: cosine, t_max: 2, min_lr: 0.000001, warmup_epochs: 0}
+  loss: {name: cross_entropy, label_smoothing: 0.0}
+  grad_clip: null
+  checkpoint_monitor: val_f1
+  early_stopping_patience: 0
+  val_split: test
+  drop_last: false
+  deterministic: true
