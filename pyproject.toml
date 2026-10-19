@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pointmil"
+version = "1.0.0"
+description = "Interpretable point cloud classification using multiple instance learning (ICCV 2025)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Matt De Vries" },
+  { name = "Reed Naidoo" },
+  { name = "Olga Fourkioti" },
+  { name = "Lucas G. Dent" },
+  { name = "Nathan Curry" },
+  { name = "Chris Dunsby" },
+  { name = "Chris Bakal" },
+]
+keywords = ["point cloud", "multiple instance learning", "interpretability", "3D", "cell morphology"]
+dependencies = [
+  "torch>=2.0",
+  "numpy>=1.24,<2",  # PyTorch 2.2 (used for the paper) is built against NumPy 1.x
+  "pandas>=2.0",
+  "pyyaml>=6.0",
+  "h5py>=3.8",
+  "einops>=0.7",
+]
+
+[project.optional-dependencies]
+wandb = ["wandb>=0.16"]
+data = ["pyntcloud>=0.3", "trimesh>=4.0", "huggingface_hub>=0.20", "gdown>=5.0", "tifffile>=2023.1", "scikit-image>=0.19"]
+hub = ["huggingface_hub>=0.20", "safetensors>=0.4"]
+dev = ["pytest>=8.0", "ruff>=0.5", "huggingface_hub>=0.20", "safetensors>=0.4"]
+notebook = ["jupyter", "matplotlib", "plotly"]
+
+[project.urls]
+Homepage = "https://sentinal4d.github.io/PointMIL"
+Repository = "https://github.com/Sentinal4D/PointMIL"
+Paper = "https://openaccess.thecvf.com/content/ICCV2025/papers/De_Vries_Interpretable_point_cloud_classification_using_multiple_instance_learning_ICCV_2025_paper.pdf"
+
+[tool.setuptools.packages.find]
+include = ["pointmil*"]
+
+[tool.ruff]
+line-length = 160
+target-version = "py310"
+extend-exclude = ["pointmil/backbones/_curvenet_layers.py", "*.ipynb"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["E501", "B008", "B905", "UP007"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-p no:cacheprovider"

@@ -1,0 +1,22 @@
+# Easiest: bash install.sh (uses mamba or micromamba when available; the classic conda solver can take hours on this file).
+# By hand: mamba env create -f environment.yml && conda activate pointmil && pip install -e .
+# Pinned to the versions that produced the paper results (PyTorch 2.2.2, CUDA 12.1, Python 3.10).
+name: pointmil
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pytorch=2.2.2
+  - torchvision=0.17.2
+  - pytorch-cuda=12.1
+  - numpy=1.26.4
+  - pandas=2.2.1
+  - pyyaml=6.0.1
+  - h5py=3.10.0
+  - pip
+  - pip:
+      - einops==0.7.0
+      - pytest>=8.0
+      - ruff>=0.5
