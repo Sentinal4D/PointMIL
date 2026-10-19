@@ -32,16 +32,13 @@ python scripts/train.py --config <yaml> --fold <k> --seed 42 --data_root $POINTM
 `outputs/<experiment.name>/fold<k>_seed<seed>/` (`seed<seed>/` for the single-split
 datasets).
 
-## Validation split
+## Checkpoint selection
 
-The original runs selected the checkpoint on the test split for every dataset
-(`train.val_split: test` in the configs), and the analysis notebooks reported the best
-value over epochs for some rows. ATLAS-1 also has a validation subset, which the paper
-runs did not use; `train.val_split: validation` selects on it. Set
-`train.val_split: holdout` to carve a stratified validation subset out of the
-training folds instead. `summary.json` reports the test metrics of the best and of
-the last checkpoint and the best validation value over epochs, so every convention
-can be read off. REPRODUCIBILITY.md discusses this.
+`train.val_split` sets the split used for checkpoint selection and early stopping:
+`test` (the provided configs), `validation` (the validation subset of ATLAS-1) or
+`holdout` (a stratified subset carved out of the training folds). `summary.json` reports
+the test metrics of the selected and of the last checkpoint and the best validation
+values reached during training.
 
 ## Table 1: interpretability on IntrA (AOPCR / NDCG@n)
 
@@ -65,15 +62,15 @@ aneurysm class (`--target_class 1`), for each fold's checkpoint, averaged over f
 |---|---|---|---|---|
 | IntrA PointMIL(Trans./DGCNN/PointNet/CurveNet dagger) | `configs/table1/intra_<backbone>_<pooling>.yaml` | pointmil | 5 | the paper reports the best pooling per backbone (conjunctive for the Transformer, additive for PointNet) |
 | IntrA CurveNet dagger baseline | `configs/table2/intra_curvenet_dagger_baseline.yaml` | pointmil | 5 | CurveNet classifier without MIL, no downsampling |
-| IntrA PointMLPElite dagger / PointMIL(PointMLPElite dagger) | `configs/table2/intra_pointmlpelite_{gap,additive,conjunctive,instance,attention}.yaml` | openpoints | 5 (paper: fold 1 only) | gap = dagger baseline; schedules of the original runs (gap 100 epochs; additive 250 epochs with the cosine reaching its minimum after 100); 100 epochs for the heads without an original run |
-| RBC PointMIL(Trans.) | `configs/table2/rbc_transformer_*.yaml` | pointmil | 5 (paper: 4) | non-linear classifier, batch 16 |
+| IntrA PointMLPElite dagger / PointMIL(PointMLPElite dagger) | `configs/table2/intra_pointmlpelite_{gap,additive,conjunctive,instance,attention}.yaml` | openpoints | 5 | gap = dagger baseline; schedules of the original runs (gap 100 epochs; additive 250 epochs with the cosine reaching its minimum after 100); 100 epochs for the heads without an original run |
+| RBC PointMIL(Trans.) | `configs/table2/rbc_transformer_*.yaml` | pointmil | 5 | non-linear classifier, batch 16 |
 | RBC PointMIL(PointNet) | `configs/table2/rbc_pointnet_*.yaml` | pointmil | 5 | non-linear classifier, dropout 0.5, xyz only, early stopping patience 100 |
 | RBC PointMIL(DGCNN) | `configs/table2/rbc_dgcnn_*.yaml` | pointmil | 5 (original runs: 3 or 4 folds per pooling; the missing folds were re-trained with the release code) | non-linear classifier, dropout 0.5, xyz only, patience 250 (from the arguments stored in the checkpoints) |
 | RBC PointMIL(CurveNet dagger), CurveNet dagger baseline | `configs/table2/rbc_curvenet_*.yaml` | pointmil | 5 | `original` = baseline |
-| RBC PointMLPElite | `configs/table2/rbc_pointmlpelite_*.yaml` | openpoints | 5 (paper: fold 2 only) | schedules of the original fold 2 runs (additive and conjunctive 250 epochs; gap 100 epochs with a 250-epoch cosine); 100 epochs otherwise |
+| RBC PointMLPElite | `configs/table2/rbc_pointmlpelite_*.yaml` | openpoints | 5 | schedules of the original runs (additive and conjunctive 250 epochs; gap 100 epochs with a 250-epoch cosine); 100 epochs otherwise |
 | ModelNet40 PointMIL(Trans./DGCNN/PointNet) | `configs/table2/modelnet40_<backbone>_<pooling>.yaml` | pointmil (SGD) | official split | ModelNet40 CurveNet dagger and PointMLPElite dagger rows came from the CurveNet and PointMLP repositories (not ported, see REPRODUCIBILITY.md) |
 | ModelNet40 with the PointNeXt / OpenPoints recipe | `configs/table2/modelnet40_openpoints_<backbone>_<pooling>.yaml` (Transformer, DGCNN, PointNet, PointMLPElite) | openpoints | official split | the recipe of the authors' PointNeXt ModelNet40 runs (AdamW 1e-3, wd 0.05, cosine to 1e-6 over 250 epochs, label smoothing 0.2, clipping 1, first 1024 points shuffled with scale and shift); recommended for new ModelNet40 training |
-| ATLAS-1 all PointMIL rows and dagger baselines | `configs/table2/atlas1_<backbone>_<pooling>.yaml` | openpoints | single split (`splits/atlas1/split0.csv`) | gap = dagger baseline; paper rows: Trans. additive, DGCNN instance, PointNet instance, CurveNet instance |
+| ATLAS-1 all PointMIL rows and dagger baselines | `configs/table2/atlas1_<backbone>_<pooling>.yaml` | openpoints | `splits/atlas1/split0.csv` | gap = dagger baseline; paper rows: Trans. additive, DGCNN instance, PointNet instance, CurveNet instance |
 | ScanObjectNN | `configs/table2/scanobjectnn_*.yaml` | openpoints | official split | paper rows: Trans. additive (batch 4), DGCNN additive, PointNet additive, PointMLPElite attention; `scanobjectnn_pointmlpelite_additive.yaml` has no paper row |
 
 `bash scripts/reproduce_table2.sh [rbc|modelnet40|modelnet40_openpoints|atlas1|scanobjectnn|intra_pointmlpelite]`.
@@ -107,7 +104,7 @@ ModelNet40 Transformer interpretations under added noise, which
 | Loss | cross-entropy | cross-entropy | cross-entropy, label smoothing 0.2 | label smoothing 0.3 |
 | Points | 1024 random of the file (IntrA: xyz + normals; RBC: xyz + normals for the Transformer, xyz otherwise) | first 1024 of 2048 (xyz) | 1024 by FPS from 4096 (xyz) | first 1024 of 2048, shuffled, in training; FPS 1024 at test (xyz + height) |
 | Augmentation | anisotropic scale U(0.8, 1.2), shift U(-0.2, 0.2) | scale U(2/3, 3/2), shift U(-0.2, 0.2), shuffle | none | scale U(0.9, 1.1), y-axis rotation, centring |
-| Model selection | best val F1 (val = test split) | best val accuracy (val = test) | best val accuracy (val = test) | best val accuracy (val = test) |
+| Model selection | best val F1 | best val accuracy | best val accuracy | best val accuracy |
 | Transformer | k-NN 32 and 64, channels 128 and 256, query MLP 64 and 256, d_k 32, 8 heads, d_v 16 and 32 | same with k-NN 20 and 20 | same as IntrA, xyz only | same, xyz + height (4 channels) |
 | Pooling heads | IntrA: linear classifiers, dropout 0.1; RBC: non-linear classifiers (dropout 0.1 Transformer, 0.5 PointNet and DGCNN); sinusoidal positional encoding, contextual attention k = 12 | non-linear classifier, dropout 0.5, no positional encoding | OpenPoints head, dropout 0.5 | OpenPoints head (MLP variant for Transformer and DGCNN) |
 | Seed | 42 | 42 | 42 | random (recorded in run names) |
