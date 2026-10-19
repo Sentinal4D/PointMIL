@@ -41,8 +41,6 @@ def legacy_rows(result_dir: str, extra_notes: dict | None = None) -> tuple[str, 
         errs = [f for f in r["folds"] if "error" in f]
         missing = [f for f in r["folds"] if f.get("n_matches", 0) == 0]
         notes = []
-        if "not identified" in r.get("paper", ""):
-            notes.append("source run not identified; closest run")
         if r["id"] in extra_notes:
             notes.append(extra_notes[r["id"]])
         if errs:
@@ -126,21 +124,6 @@ def noise_rows(noise_dir: str) -> str:
     return "\n".join(lines)
 
 
-def atlas1_sampling_rows(path: str) -> str:
-    """Table of ATLAS-1 checkpoints evaluated repeatedly with a random FPS start point (as the original loader did)."""
-    if not os.path.exists(path):
-        return "Not measured yet."
-    data = json.load(open(path))
-    lines = ["| checkpoint | paper mACC / F1 | draws | oACC mean +/- sd | oACC max | mACC mean +/- sd | mACC max | F1 max |",
-             "|---|---|---|---|---|---|---|---|"]
-    for row, d in data.items():
-        pv = d.get("paper") or {}
-        paper = f"{pv.get('macc', '-')} / {pv.get('f1', '-')}"
-        lines.append(f"| {row} | {paper} | {d['draws']} | {d['oacc_mean']:.1f} +/- {d['oacc_std']:.1f} | {d['oacc_max']:.1f} | "
-                     f"{d['macc_mean']:.1f} +/- {d['macc_std']:.1f} | {d['macc_max']:.1f} | {d['f1_max']:.1f} |")
-    return "\n".join(lines)
-
-
 def hf_notes(records: list[dict], manifest: dict) -> str:
     lines = ["# Checkpoints found for the Hugging Face release", "",
              "Every checkpoint of the original code bases that corresponds to a paper result, with the fold, the metrics obtained when the",
@@ -180,7 +163,6 @@ def main() -> None:
     ap.add_argument("--template", default="docs/reproducibility_template.md")
     ap.add_argument("--out", default="REPRODUCIBILITY.md")
     ap.add_argument("--hf_out", default="HF_EXPORT_NOTES.md")
-    ap.add_argument("--atlas1_sampling", default="results/atlas1_fps_variance.json", help="repeated evaluations with the original random FPS start")
     ap.add_argument("--fresh_env", default="results/fresh_env.md", help="markdown written after the fresh environment test; inserted verbatim")
     ap.add_argument("--gpu_determinism", default="results/determinism_gpu.md", help="markdown with the GPU determinism measurement; inserted verbatim when present")
     args = ap.parse_args()
@@ -191,7 +173,6 @@ def main() -> None:
     fresh = Path(args.fresh_env).read_text().strip() if os.path.exists(args.fresh_env) else "Not run yet (see `install.sh`)."
     text = (template.replace("{{LEGACY_TABLE}}", legacy_table).replace("{{RETRAIN_TABLE}}", retrain_table)
             .replace("{{NOISE_TABLE}}", noise_rows(args.noise)).replace("{{FRESH_ENV}}", fresh)
-            .replace("{{ATLAS1_SAMPLING}}", atlas1_sampling_rows(args.atlas1_sampling))
             .replace("{{GPU_DETERMINISM}}", Path(args.gpu_determinism).read_text().strip() if os.path.exists(args.gpu_determinism) else ""))
     Path(args.out).write_text(text)
     if os.path.exists(args.manifest):

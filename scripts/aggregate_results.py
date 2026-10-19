@@ -9,8 +9,7 @@ Two modes::
 ``runs`` reads the ``summary.json`` files written by ``scripts/train.py`` (one per fold
 and seed) and, where present, ``interpretability.json`` (``scripts/interpret.py metrics --out``);
 ``legacy`` reads the JSON files of the authors' ``scripts/evaluate_legacy.py``.
-"Max over epochs" is the largest value of the validation metric during training, which is the
-paper's convention when the validation split is the test split.
+"Max over epochs" is the largest value of the validation metric during training.
 """
 
 from __future__ import annotations

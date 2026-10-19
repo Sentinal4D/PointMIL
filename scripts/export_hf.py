@@ -252,9 +252,11 @@ Trained models from **Interpretable point cloud classification using multiple in
 (De Vries et al., ICCV 2025). PointMIL classifies a point cloud and, in the same forward pass,
 scores how much every point contributed to the prediction.
 
-- Paper: https://openaccess.thecvf.com/content/ICCV2025/papers/De_Vries_Interpretable_point_cloud_classification_using_multiple_instance_learning_ICCV_2025_paper.pdf
-- Code: https://github.com/Sentinal4D/PointMIL (install with `pip install -e .[hub]`)
-- Project page: https://sentinal4d.github.io/PointMIL
+[Paper](https://openaccess.thecvf.com/content/ICCV2025/papers/De_Vries_Interpretable_point_cloud_classification_using_multiple_instance_learning_ICCV_2025_paper.pdf) ·
+[Code](https://github.com/Sentinal4D/PointMIL) ·
+[Project page](https://sentinal4d.github.io/PointMIL)
+
+Install the code with `pip install -e ".[hub]"` from the code repository.
 
 ## Load a model
 
@@ -305,9 +307,8 @@ Pooling heads: instance, attention, additive and conjunctive (Eq. 1 to 4 of the 
 
 Test metrics of each checkpoint re-evaluated with the released code (mean ± standard deviation
 over folds; mACC = mean class accuracy, oACC = overall accuracy, F1 = macro F1, in percent).
-Each cloud is subsampled to 1024 random points at evaluation. The paper reports the best value
-over training epochs on a validation split that was the test split, so its numbers are
-slightly higher; `REPRODUCIBILITY.md` in the code repository explains every difference.
+Each cloud is subsampled to 1024 points at evaluation as described in `REPRODUCIBILITY.md`
+in the code repository, which also lists the published values.
 {"AOPCR and NDCG@n are the Table 1 interpretability metrics on the 116 annotated IntrA segments." if dataset == "intra" else ""}
 
 ### Checkpoints behind the paper
