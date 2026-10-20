@@ -2,9 +2,10 @@
 """Write REPRODUCIBILITY.md (and the authors' HF_EXPORT_NOTES.md) from the evaluation and re-training outputs.
 
 Authors' tool: its inputs are not part of the public repository.
-Inputs: ``results/legacy/*.json`` (from scripts/evaluate_legacy.py), ``outputs/*/*/summary.json``
-(from scripts/train.py) and the authors' manifest ``docs/legacy_checkpoints.yaml`` (not public;
-see scripts/evaluate_legacy.py). Without the manifest only REPRODUCIBILITY.md is written.
+Inputs: ``outputs/*/*/summary.json`` (from scripts/train.py), ``results/legacy/*.json`` (from
+scripts/evaluate_legacy.py, used only for HF_EXPORT_NOTES.md) and the authors' manifest
+``docs/legacy_checkpoints.yaml`` (not public; see scripts/evaluate_legacy.py). Without the
+manifest only REPRODUCIBILITY.md is written.
 """
 
 from __future__ import annotations
@@ -28,34 +29,14 @@ def mean_sd(vals, d=1):
     return f"{np.mean(vals):.{d}f} +/- {np.std(vals, ddof=1):.{d}f}"
 
 
-def legacy_rows(result_dir: str, extra_notes: dict | None = None) -> tuple[str, list[dict]]:
-    rows, records = [], []
-    extra_notes = extra_notes or {}
+def legacy_records(result_dir: str) -> list[dict]:
+    """One record per fold of every released checkpoint evaluated by scripts/evaluate_legacy.py."""
+    records = []
     for path in sorted(glob.glob(os.path.join(result_dir, "*.json"))):
         r = json.load(open(path))
-        folds = [f for f in r["folds"] if "test" in f]
-        pv = r.get("paper_values") or {}
-        paper = "; ".join(f"{k} {v}" for k, v in pv.items()) or "-"
-        aopcr = [f["interpretability"]["aopcr"] for f in folds if "interpretability" in f]
-        ndcg = [f["interpretability"].get("ndcg") for f in folds if "interpretability" in f]
-        errs = [f for f in r["folds"] if "error" in f]
-        missing = [f for f in r["folds"] if f.get("n_matches", 0) == 0]
-        notes = []
-        if r["id"] in extra_notes:
-            notes.append(extra_notes[r["id"]])
-        if errs:
-            notes.append(f"{len(errs)} fold(s) failed to load")
-        if missing:
-            notes.append(f"{len(missing)} fold(s) without checkpoint")
-        rows.append("| {} | {} | {} | {} | {} | {} | {} | {} | {} |".format(
-            r["id"], r["pooling"], f"{len(folds)}/{len(r['folds'])}", paper,
-            mean_sd([f["test"]["macc"] for f in folds]), mean_sd([f["test"]["oacc"] for f in folds]), mean_sd([f["test"]["f1"] for f in folds]),
-            mean_sd(aopcr, 3) + (" / " + mean_sd(ndcg, 3) if ndcg else ""), "; ".join(notes) or "-"))
         for f in r["folds"]:
             records.append({"row": r["id"], "paper": r["paper"], "pooling": r["pooling"], "format": r["format"], "config": r["config"], **f})
-    header = ("| paper row | pooling | folds | paper value | mACC (release code) | oACC | F1 | AOPCR / NDCG@n | notes |\n"
-              "|---|---|---|---|---|---|---|---|---|\n")
-    return header + "\n".join(rows), records
+    return records
 
 
 def paper_values_by_config(manifest_path: str) -> dict:
@@ -166,12 +147,11 @@ def main() -> None:
     ap.add_argument("--fresh_env", default="results/fresh_env.md", help="markdown written after the fresh environment test; inserted verbatim")
     ap.add_argument("--gpu_determinism", default="results/determinism_gpu.md", help="markdown with the GPU determinism measurement; inserted verbatim when present")
     args = ap.parse_args()
-    manifest_notes = (yaml.safe_load(open(args.manifest)) or {}).get("notes", {}) if os.path.exists(args.manifest) else {}
-    legacy_table, records = legacy_rows(args.legacy, manifest_notes)
+    records = legacy_records(args.legacy)
     retrain_table = retrain_rows(args.outputs, args.manifest)
-    template = Path(args.template).read_text() if os.path.exists(args.template) else "# Reproducibility\n\n{{LEGACY_TABLE}}\n\n{{RETRAIN_TABLE}}\n"
+    template = Path(args.template).read_text() if os.path.exists(args.template) else "# Reproducibility\n\n{{RETRAIN_TABLE}}\n"
     fresh = Path(args.fresh_env).read_text().strip() if os.path.exists(args.fresh_env) else "Not run yet (see `install.sh`)."
-    text = (template.replace("{{LEGACY_TABLE}}", legacy_table).replace("{{RETRAIN_TABLE}}", retrain_table)
+    text = (template.replace("{{RETRAIN_TABLE}}", retrain_table)
             .replace("{{NOISE_TABLE}}", noise_rows(args.noise)).replace("{{FRESH_ENV}}", fresh)
             .replace("{{GPU_DETERMINISM}}", Path(args.gpu_determinism).read_text().strip() if os.path.exists(args.gpu_determinism) else ""))
     Path(args.out).write_text(text)

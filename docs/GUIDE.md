@@ -1,7 +1,7 @@
 # PointMIL guide
 
 Details behind the [README](../README.md). [EXPERIMENTS.md](EXPERIMENTS.md) maps every config
-to the paper; [REPRODUCIBILITY.md](../REPRODUCIBILITY.md) lists the results obtained with this code.
+to the paper; [REPRODUCIBILITY.md](../REPRODUCIBILITY.md) describes the evaluation protocol and determinism.
 
 ## Installation
 

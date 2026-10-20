@@ -70,7 +70,7 @@ PointMLPElite, and recommended for ModelNet40 via `configs/table2/modelnet40_ope
 | Table 2 (RBC, ModelNet40, ATLAS-1, ScanObjectNN) | `bash scripts/reproduce_table2.sh rbc` (or `modelnet40`, `atlas1`, `scanobjectnn`) |
 | Supp. Table 3 and Fig. 6 | `bash scripts/reproduce_supp_table3_fig6.sh` |
 
-[Run times](docs/GUIDE.md#run-times) · [Results with this code](REPRODUCIBILITY.md)
+[Run times](docs/GUIDE.md#run-times) · [Reproducibility](REPRODUCIBILITY.md)
 
 ## Pretrained models
 
